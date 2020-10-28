@@ -8,11 +8,11 @@ Gem::Specification.new do |s|
   # rubocop:disable SingleSpaceBeforeFirstArg
   s.name        = 'hitobito_sjas'
   s.version     = HitobitoSjas::VERSION
-  s.authors     = ['Your name']
-  s.email       = ['Your email']
+  s.authors     = ['Matthias Viehweger', 'Mathis Hofer']
+  s.email       = ['viehweger@puzzle.ch', 'hofer@puzzle.ch']
   # s.homepage    = 'TODO'
-  s.summary     = 'Sjas'
-  s.description = 'Wagon description'
+  s.summary     = 'Hitobito SJAS Wagon'
+  s.description = 'Hitobito Wagon for "Stiftung für junge Auslandssschweizer"'
 
   s.files = Dir['{app,config,db,lib}/**/*'] + ['Rakefile']
   s.test_files = Dir['test/**/*']
