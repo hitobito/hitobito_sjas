@@ -19,7 +19,7 @@ class TarantulaTest < ActionDispatch::IntegrationTest
   reset_fixture_path File.expand_path('../../../spec/fixtures', __FILE__)
 
   include TarantulaConfig
-  
+
   # Crawls the application with admin permissions
   # to cover as many actions as possible.
   def test_tarantula_as_admin
@@ -38,9 +38,9 @@ class TarantulaTest < ActionDispatch::IntegrationTest
   def test_tarantula_as_member
     crawl_as(people(:member))
   end
-  
+
   private
-  
+
   def configure_urls_with_hitobito_sjas(t, person)
     configure_urls_without_hitobito_sjas(t, person)
 

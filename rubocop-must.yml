@@ -4,7 +4,6 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 
-
 # Rubocop configuration that MUST hold for every build.
 
 inherit_from: ../hitobito/rubocop-must.yml
