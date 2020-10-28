@@ -8,10 +8,13 @@ zeus.json
 .sass-cache
 .project
 .envrc
+.tool-versions
 *.iml
 .generators
 .idea
 .rakeTasks
+C\:*
+.pry_history
 
 # ignore Gemfile.lock for wagons
 Gemfile.lock
