@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email       = ['viehweger@puzzle.ch', 'hofer@puzzle.ch']
   # s.homepage    = 'TODO'
   s.summary     = 'Hitobito SJAS Wagon'
-  s.description = 'Hitobito Wagon for "Stiftung für junge Auslandssschweizer"'
+  s.description = 'Hitobito Wagon for "Stiftung f. junge Auslandssschweizer"'
 
   s.files = Dir['{app,config,db,lib}/**/*'] + ['Rakefile']
   s.test_files = Dir['test/**/*']
