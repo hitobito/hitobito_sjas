@@ -19,15 +19,13 @@ class SjasPersonSeeder < PersonSeeder
 
 end
 
-puzzlers = [
-  'Andre Kunz',
-  'Andreas Maierhofer',
-  'Mathis Hofer',
-  'Matthias Viehweger',
-  'Pascal Simon',
-  'Pascal Zumkehr',
-  'Roland Studer'
-]
+
+puzzlers = ['Pascal Zumkehr',
+            'Pascal Simon',
+            'Andreas Maierhofer',
+            'Matthias Viehweger',
+            'Olivier Brian',
+            'Carlo Beltrame']
 
 devs = {'Loïc Roth' => 'roth@sjas.ch'}
 puzzlers.each do |puz|
