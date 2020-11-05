@@ -7,16 +7,14 @@
 admin:
   person: admin
   group: root
-  type: Group::Root::Leader
+  type: Group::Dachverband::Admin
 
-# TODO use group and type of the main base leader
 leader:
   person: leader
-  group: root
-  type: Group::Root::Leader
+  group: leitungspool
+  type: Group::DachverbandLeitungspool::Lagerleitung
 
-# TODO use group and type of the main base member
 member:
   person: member
-  group: root
-  type: Group::Root::Member
+  group: teilnehmer_pool
+  type: Group::DachverbandTeilnehmerpool::Teilnehmer

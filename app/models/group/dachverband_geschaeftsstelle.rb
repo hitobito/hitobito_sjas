@@ -15,12 +15,12 @@
 class Group::DachverbandGeschaeftsstelle < ::Group
   class Adressverwalter < ::Role
   end
-  class Projetkleitung < ::Role
+  class Projektleitung < ::Role
   end
   class Sachbearbeitung < ::Role
   end
   class Geschaeftsfuehrung < ::Role
   end
 
-  roles Adressverwalter, Projetkleitung, Sachbearbeitung, Geschaeftsfuehrung
+  roles Adressverwalter, Projektleitung, Sachbearbeitung, Geschaeftsfuehrung
 end
