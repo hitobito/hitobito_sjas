@@ -6,15 +6,15 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 
-module Sjas::Group
-  extend ActiveSupport::Concern
+# Fundraising
+#     Institutionen/Stiftungen[]
+#     Privatspender\*innen[]
+#     Elternspenden []
+class Group::Fundraising < ::Group
+  self.layer = true
 
-  included do
-    # Define additional used attributes
-    # self.used_attributes += [:website, :bank_account, :description]
-    # self.superior_attributes = [:bank_account]
-
-    root_types ::Group::Dachverband
+  class Kontakt < ::Role::Kontakt
   end
 
+  roles Kontakt
 end

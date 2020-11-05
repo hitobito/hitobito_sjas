@@ -20,16 +20,15 @@ class SjasPersonSeeder < PersonSeeder
 end
 
 puzzlers = [
-  'Andre Kunz',
   'Andreas Maierhofer',
   'Mathis Hofer',
   'Matthias Viehweger',
+  'Olivier Brian',
   'Pascal Simon',
   'Pascal Zumkehr',
-  'Roland Studer'
 ]
 
-devs = {'Loïc Roth' => 'roth@sjas.ch'}
+devs = { 'Loïc Roth' => 'roth@sjas.ch' }
 puzzlers.each do |puz|
   devs[puz] = "#{puz.split.last.downcase}@puzzle.ch"
 end
@@ -40,5 +39,5 @@ seeder.seed_all_roles
 
 root = Group.root
 devs.each do |name, email|
-  seeder.seed_developer(name, email, root, Group::Root::Leader)
+  seeder.seed_developer(name, email, root, Group::Dachverband::Admin)
 end

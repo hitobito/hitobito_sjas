@@ -10,16 +10,21 @@ require Rails.root.join('db', 'seeds', 'support', 'group_seeder')
 
 seeder = GroupSeeder.new
 
-root = Group.roots.first
+root = Group.root
 srand(42)
 
-if root.address.blank?
-  root.update_attributes(seeder.group_attributes)
-  root.default_children.each do |child_class|
-    child_class.first.update_attributes(seeder.group_attributes)
-  end
-end
+# setup some more groups layers
+Group::Stiftung.seed_once(:name, parent_id: root.id, name: "Stiftung für Kinder")
+Group::Stiftung.seed_once(:name, parent_id: root.id, name: "Stiftung für Schweizer")
+Group::Partner.seed_once(:name, parent_id: root.id, name: "PBS")
+Group::Partner.seed_once(:name, parent_id: root.id, name: "ASO")
+Group::Partner.seed_once(:name, parent_id: root.id, name: "EDA")
+Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "AG/SO")
+Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "GR")
+Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "ZG")
+Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Institution A")
+Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Elternverein B")
+Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Privatspender C")
 
-# TODO: define more groups
-
+puts "Rebuilding Nested Set..."
 Group.rebuild!

@@ -10,16 +10,116 @@ de:
 
       ### GROUPS
 
-      group/root:
-        one: Hauptgruppe
-        other: Hauptgruppen
+      group/dachverband:
+        one: SJAS
 
+      group/dachverband_geschaeftsstelle:
+        one: Geschäftsstelle
+        other: Geschäftsstellen
+
+      group/dachverband_leitungspool:
+        one: Leitungspool
+        other: Leitungspools
+
+      group/dachverband_teilnehmerpool:
+        one: Teilnehmerpool
+        other: Teilnehmerpools
+
+      group/dachverband_stiftungsrat:
+        one: Stiftungsrat
+        other: Stiftungsräte
+
+      group/stiftung:
+        one: Stiftung
+        other: Stiftungen
+
+      group/partner:
+        one: Partner
+        other: Partner
+
+      group/kantonalkomitee:
+        one: Kantonalkomitee
+        other: Kantonalkomitees
+
+      group/fundraising:
+        one: Fundraising
+        other: Fundraising
 
       ### ROLES
 
-      group/root/leader:
-        one: Leitung
-        description: Leitungspersonen verwalten die Applikation.
-      group/root/member:
-        one: Mitglied
-        description: Mitglieder sind alle anderen.
+      group/dachverband/admin:
+        one: Administrator
+        description:
+
+      group/dachverband_geschaeftsstelle/adressverwalter:
+        one: Adressverwalter*in
+        description:
+
+      group/dachverband_geschaeftsstelle/projektleitung:
+        one: Projektleitung
+        description:
+
+      group/dachverband_geschaeftsstelle/sachbearbeitung:
+        one: Sachbearbeitung
+        description:
+
+      group/dachverband_geschaeftsstelle/geschaeftsfuehrung:
+        one: Geschäftsführung
+        description:
+
+      group/dachverband_leitungspool/lagerleitung:
+        one: Lagerleiter*innen
+        description:
+
+      group/dachverband_leitungspool/kursleitung:
+        one: Kursleiter*innen
+        description:
+
+      group/dachverband_leitungspool/mitleitung:
+        one: Mitleiter*innen
+        description:
+
+      group/dachverband_leitungspool/koch:
+        one: Köch*in
+        description:
+
+      group/dachverband_leitungspool/zivildienstleistender:
+        one: Zivildienstleistender
+        other: Zivildienstleistende
+        description:
+
+      group/dachverband_teilnehmerpool/teilnehmende:
+        one: Teilnehmende
+        description: Teilnehmer an Lagern
+
+      group/dachverband_stiftungsrat/praesident:
+        one: Präsident*in
+        description:
+
+      group/dachverband_stiftungsrat/vizepraesident:
+        one: Vize-Präsident*in
+        description:
+
+      group/dachverband_stiftungsrat/kassier:
+        one: Kassier*in
+        description:
+
+      group/dachverband_stiftungsrat/sekretaer:
+        one: Sekretär*in
+        description:
+
+      group/dachverband_stiftungsrat/beisitzer:
+        one: Beisitzer*in
+        description:
+
+      group/stiftungen/kontakt:
+        one: Kontakt
+
+      group/partner/partner:
+        one: Partner
+
+      group/kantonalkomitee/kontakt:
+        one: Kontakt
+
+      group/fundraising/kontakt:
+        one: Kontakt

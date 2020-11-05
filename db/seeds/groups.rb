@@ -6,4 +6,8 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 
-Group::Root.seed_once(:parent_id, name: 'Hauptgruppe')
+Group::Dachverband.seed_once(:parent_id, :short_name,
+  parent_id: nil,
+  name: 'Stiftung für junge Auslandsschweizer',
+  short_name: 'SJAS'
+)
