@@ -21,9 +21,8 @@ Group::Partner.seed_once(:name, parent_id: root.id, name: "EDA")
 Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "AG/SO")
 Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "GR")
 Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "ZG")
-Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Institution A")
-Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Elternverein B")
-Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Privatspender C")
+Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Institutionen/Stiftungen", short_name: 'Institutionen')
+Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Privatspender")
 
 puts "Rebuilding Nested Set..."
 Group.rebuild!
