@@ -14,14 +14,23 @@
 #     Beisitzer\*in[]
 class Group::DachverbandStiftungsrat < ::Group
   class Praesident < ::Role
+    self.permissions = [:layer_read, :group_full]
   end
+
   class Vizepraesident < ::Role
+    self.permissions = [:layer_read]
   end
+
   class Kassier < ::Role
+    self.permissions = [:layer_read]
   end
+
   class Sekretaer < ::Role
+    self.permissions = [:layer_read, :group_full]
   end
+
   class Beisitzer < ::Role
+    self.permissions = [:layer_read]
   end
 
   roles Praesident, Vizepraesident, Kassier, Sekretaer, Beisitzer

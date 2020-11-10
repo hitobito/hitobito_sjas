@@ -20,10 +20,12 @@ module HitobitoSjas
                                )
 
     config.to_prepare do
-      # rubocop:disable SingleSpaceBeforeFirstArg
       # extend application classes here
-      Group.send        :include, Sjas::Group
-      # rubocop:enable SingleSpaceBeforeFirstArg
+
+      # Models
+      Group.include Sjas::Group
+      Event.include Sjas::Event
+      Event::Course.include Sjas::Event::Course
     end
 
     initializer 'sjas.add_settings' do |_app|

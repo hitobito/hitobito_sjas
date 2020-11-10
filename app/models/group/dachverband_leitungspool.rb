@@ -15,12 +15,16 @@
 class Group::DachverbandLeitungspool < ::Group
   class Lagerleitung < ::Role::Leitung
   end
+
   class Kursleitung < ::Role::Leitung
   end
+
   class Mitleitung < ::Role::Leitung
   end
+
   class Koch < ::Role::Leitung
   end
+
   class Zivildienstleistender < ::Role::Leitung
   end
 

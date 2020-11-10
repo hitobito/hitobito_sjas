@@ -118,8 +118,14 @@ de:
       group/partner/partner:
         one: Partner
 
+      group/kantonalkomitee/adressverwalter:
+        one: Adressverwalter*in
+
       group/kantonalkomitee/kontakt:
         one: Kontakt
+
+      group/fundraising/adressverwalter:
+        one: Adressverwalter*in
 
       group/fundraising/kontakt:
         one: Kontakt
