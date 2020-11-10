@@ -12,8 +12,18 @@ class SjasPersonSeeder < PersonSeeder
 
   def amount(role_type)
     case role_type.name.demodulize
-    when 'Member' then 5
-    else 1
+    when 'Admin' then 2
+    when 'Kontakt', 'Partner' then 5
+    when 'Teilnehmer' then 20
+    when /(Lager|Kurs|Mit)leitung$/, 'Koch', 'Zivildienstleistender' then 2
+    when 'Beisitzer' then 3
+    else
+      case role_type.name.split('::')[1]
+      when 'DachverbandGeschaeftsstelle' then 2
+      when 'DachverbandStiftungsrat' then 1
+      else
+        1
+      end
     end
   end
 
