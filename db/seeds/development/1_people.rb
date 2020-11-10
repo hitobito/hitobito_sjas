@@ -38,7 +38,7 @@ puzzlers = [
   'Pascal Zumkehr',
 ]
 
-devs = { 'Loïc Roth' => 'roth@sjas.ch' }
+devs = {}
 puzzlers.each do |puz|
   devs[puz] = "#{puz.split.last.downcase}@puzzle.ch"
 end
@@ -50,4 +50,17 @@ seeder.seed_all_roles
 root = Group.root
 devs.each do |name, email|
   seeder.seed_developer(name, email, root, Group::Dachverband::Admin)
+end
+
+geschaeftsstelle = Group::DachverbandGeschaeftsstelle.first
+[
+  seeder.seed_developer('Loïc Roth', 'roth@sjas.ch', geschaeftsstelle,
+                        Group::DachverbandGeschaeftsstelle::Geschaeftsfuehrung),
+  seeder.seed_developer('Sibylle Kappeler', 'kappeler@sjas.ch', geschaeftsstelle,
+                        Group::DachverbandGeschaeftsstelle::Projektleitung),
+  seeder.seed_developer('Elena Tarozzo', 'tarozzo@sjas.ch', geschaeftsstelle,
+                        Group::DachverbandGeschaeftsstelle::Sachbearbeitung),
+].map do |roles|
+  primary_role = Array(roles).first
+  seeder.seed_role(primary_role.person, root, Group::Dachverband::Admin)
 end
