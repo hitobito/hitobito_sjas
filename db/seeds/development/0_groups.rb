@@ -6,12 +6,11 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 
-require Rails.root.join('db', 'seeds', 'support', 'group_seeder')
-
-seeder = GroupSeeder.new
+# require Rails.root.join('db', 'seeds', 'support', 'group_seeder')
+# seeder = GroupSeeder.new
+# srand(42)
 
 root = Group.root
-srand(42)
 
 # setup some more groups layers
 Group::Stiftung.seed_once(:name, parent_id: root.id, name: "Stiftung für Kinder")
