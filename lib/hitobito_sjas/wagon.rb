@@ -27,6 +27,8 @@ module HitobitoSjas
       Group.include Sjas::Group
       Event.include Sjas::Event
       Event::Course.include Sjas::Event::Course
+
+      PeopleController.include Sjas::PeopleController
     end
 
     initializer 'sjas.add_settings' do |_app|

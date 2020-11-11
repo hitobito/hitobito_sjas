@@ -129,3 +129,7 @@ de:
 
       group/fundraising/kontakt:
         one: Kontakt
+
+    attributes:
+      person:
+        place_of_origin: Heimatort
