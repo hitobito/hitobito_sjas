@@ -18,7 +18,7 @@ class Group::DachverbandStiftungsrat < ::Group
   end
 
   class Vizepraesident < ::Role
-    self.permissions = [:layer_read]
+    self.permissions = [:layer_read, :group_full]
   end
 
   class Kassier < ::Role
