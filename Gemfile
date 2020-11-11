@@ -1,4 +1,6 @@
-load File.expand_path('../app_root.rb', __FILE__)
+# frozen_string_literal: true
+
+load File.expand_path('app_root.rb', __dir__)
 
 source 'https://rubygems.org'
 
@@ -8,7 +10,7 @@ source 'https://rubygems.org'
 gemspec
 
 # Load application Gemfile for all application dependencies.
-eval File.read(File.expand_path('Gemfile', ENV['APP_ROOT']))
+eval File.read(File.expand_path('Gemfile', ENV['APP_ROOT'])) # rubocop:disable Security/Eval
 
 group :development, :test do
   # Explicitly define the path for dependencies on other wagons.

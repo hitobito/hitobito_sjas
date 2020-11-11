@@ -14,16 +14,15 @@ module HitobitoSjas
     app_requirement '>= 0'
 
     # Add a load path for this specific wagon
-    config.autoload_paths += %W( #{config.root}/app/abilities
-                                 #{config.root}/app/domain
-                                 #{config.root}/app/jobs
-                               )
+    config.autoload_paths += %W[
+      #{config.root}/app/abilities
+      #{config.root}/app/domain
+      #{config.root}/app/jobs
+    ]
 
     config.to_prepare do
-      # rubocop:disable SingleSpaceBeforeFirstArg
       # extend application classes here
-      Group.send        :include, Sjas::Group
-      # rubocop:enable SingleSpaceBeforeFirstArg
+      Group.include Sjas::Group
     end
 
     initializer 'sjas.add_settings' do |_app|
