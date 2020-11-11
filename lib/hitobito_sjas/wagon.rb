@@ -22,7 +22,11 @@ module HitobitoSjas
 
     config.to_prepare do
       # extend application classes here
+
+      # Models
       Group.include Sjas::Group
+      Event.include Sjas::Event
+      Event::Course.include Sjas::Event::Course
     end
 
     initializer 'sjas.add_settings' do |_app|

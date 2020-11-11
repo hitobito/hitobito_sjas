@@ -27,6 +27,7 @@ class Group::Dachverband < ::Group
            Group::Fundraising
 
   class Admin < ::Role::Admin
+    self.permissions += [:impersonation]
   end
 
   roles Admin

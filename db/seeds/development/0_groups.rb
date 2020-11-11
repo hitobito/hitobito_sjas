@@ -6,12 +6,11 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 
-require Rails.root.join('db', 'seeds', 'support', 'group_seeder')
-
-seeder = GroupSeeder.new
+# require Rails.root.join('db', 'seeds', 'support', 'group_seeder')
+# seeder = GroupSeeder.new
+# srand(42)
 
 root = Group.root
-srand(42)
 
 # setup some more groups layers
 Group::Stiftung.seed_once(:name, parent_id: root.id, name: "Stiftung für Kinder")
@@ -22,9 +21,8 @@ Group::Partner.seed_once(:name, parent_id: root.id, name: "EDA")
 Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "AG/SO")
 Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "GR")
 Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "ZG")
-Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Institution A")
-Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Elternverein B")
-Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Privatspender C")
+Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Institutionen/Stiftungen", short_name: 'Institutionen')
+Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Privatspender")
 
 puts "Rebuilding Nested Set..."
 Group.rebuild!

@@ -13,8 +13,11 @@
 class Group::Fundraising < ::Group
   self.layer = true
 
+  class Adressverwalter < ::Role::Adressverwalter
+  end
+
   class Kontakt < ::Role::Kontakt
   end
 
-  roles Kontakt
+  roles Adressverwalter, Kontakt
 end

@@ -6,17 +6,6 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 
-# Kantonalkomitees
-#     Kantonalkomitee+
-#         Kontakte[]
-class Group::Kantonalkomitee < ::Group
-  self.layer = true
-
-  class Adressverwalter < ::Role::Adressverwalter
-  end
-
-  class Kontakt < ::Role::Kontakt
-  end
-
-  roles Adressverwalter, Kontakt
+class Role::Adressverwalter < ::Role
+  self.permissions = [:group_full, :contact_data]
 end

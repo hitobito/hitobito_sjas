@@ -13,13 +13,20 @@
 #     Sachbearbeitung[]
 #     Geschäftsführung[]
 class Group::DachverbandGeschaeftsstelle < ::Group
-  class Adressverwalter < ::Role
+  class Adressverwalter < ::Role::Adressverwalter
+    self.permissions += [:layer_and_below_full]
   end
+
   class Projektleitung < ::Role
+    self.permissions = [:layer_and_below_full, :contact_data, :finance]
   end
+
   class Sachbearbeitung < ::Role
+    self.permissions = [:layer_and_below_full, :finance]
   end
+
   class Geschaeftsfuehrung < ::Role
+    self.permissions = [:layer_and_below_full, :finance]
   end
 
   roles Adressverwalter, Projektleitung, Sachbearbeitung, Geschaeftsfuehrung

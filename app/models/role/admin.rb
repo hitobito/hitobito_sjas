@@ -7,4 +7,5 @@
 
 
 class Role::Admin < ::Role
+  self.permissions = [:admin, :layer_and_below_full]
 end

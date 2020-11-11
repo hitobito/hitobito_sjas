@@ -7,4 +7,6 @@
 
 
 class Role::Kontakt < ::Role
+  self.permissions = []
+  self.kind = :external
 end
