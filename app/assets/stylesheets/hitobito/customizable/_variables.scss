@@ -1,0 +1,114 @@
+//  Copyright (c) 2012-2020, Stiftung für junge Auslandssschweizer. This file is part of
+//  hitobito_sjas and licensed under the Affero General Public License version 3
+//  or later. See the COPYING file at the top-level directory or at
+//  https://github.com/hitobito/hitobito_sjas.
+
+// Brand
+// -------------------------
+$sjasRed:               #e81630; // Primary brand color
+
+$sjasWhite:             #ffffff; // Website background
+$sjasGray1:             #e9e9e9; // Website button background
+$sjasGray2:             #d0d0d0; // Website button hover
+$sjasGray3:             #39332a; // Website font color
+
+$sjasBlue1:             #d5e0ed;
+$sjasBlue2:             #afcce9; // Secondary blue in annual report
+$sjasBlue3:             #819cba;
+$sjasBlue4:             #418aca; // Primary blue in annual report
+$sjasBlue5:             #081627;
+
+
+/* Bootstrap variable definition here */
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+$black:                 $sjasGray3;
+$grayDark:              darken($sjasBlue3, 20%);
+$grayDark:              darken($sjasBlue3, 10%);
+$gray:                  $sjasBlue3;
+$grayLight:             $sjasBlue2;
+$grayLighter:           $sjasBlue1;
+$white:                 $sjasWhite;
+
+// Colors
+// ----------------------------
+$blue:                  $sjasRed;
+$blueDark:              darken($blue, 10%);
+$green:                 #8DB850;
+$greenDark:             darken($green, 10%);
+
+$orange:                #DC795B;
+$orangeDark:            #C75B3B;
+$purple:                $sjasBlue3;
+$purpleDark:            darken($sjasBlue3, 10%);
+
+$red:                   $sjasRed;
+
+$textColor:             $black;
+$borderColor:           $sjasGray1;
+
+$pageBackground:        $sjasWhite;
+$contentBackground:     $sjasBlue1;
+$footerBackground:      $sjasGray1;
+$bodyBackground:        $sjasGray1;
+
+$focusColor:            $purple;
+$shadowColor:           darken($pageBackground, 10%);
+$linkColor:             $textColor;
+$linkColorHover:        $sjasRed;
+
+$footerColor:           $textColor;
+$footerColorHover:      $textColor;
+
+$tableColorHover:       lighten($purple, 50%);
+$tableBackgroundAccent: lighten($sjasBlue1, 9%);
+
+// Typography
+// -------------------------
+
+$sansFontFamily:        "Open Sans", Arial, Helvetica, sans-serif;
+$headingFontFamily:     "Capita-Light", "Times New Roman", Times, serif;
+$baseFontFamily:        "Open Sans", Arial, Helvetica, sans-serif;
+$headingsFontWeight:    normal; // instead of browser default, bold
+
+// Decoration
+// -------------------------
+$borderRadius:           6px;
+
+// Rhythm
+// -------------------------
+$vSpace:                24px;
+
+
+// FLUID GRID
+// --------------------------------------------------
+
+// Default
+// -------------------------
+$fluidGridColumnWidth:         6.382978723%;
+$fluidGridGutterWidth:         2.127659574%;
+
+// Portrait tablet to default desktop
+// -------------------------
+$fluidGridColumnWidthTablet:   5.801104972%;
+$fluidGridGutterWidthTablet:   2.762430939%;
+
+// Large desktop and up
+// -------------------------
+$fluidGridColumnWidthLarge:    5.982905983%;
+$fluidGridGutterWidthLarge:    2.564102564%;
+
+
+// RESPONSIVE DESIGN
+// --------------------------------------------------
+
+// Media widths
+// -------------------------
+$mediaPhone:              480px;
+$mediaTablet:             768px;
+$mediaDesktop:            980px;
+$mediaLarge:              1200px; // and upper
