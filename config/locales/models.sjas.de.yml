@@ -133,3 +133,14 @@ de:
     attributes:
       person:
         place_of_origin: Heimatort
+        language_skills:
+          native: Muttersprache
+          good: Gute Kenntnisse
+          basic: Grundkenntnisse
+          none: Keine Kenntnisse
+        language_skill_de: Deutsch
+        language_skill_fr: Französisch
+        language_skill_it: Italienisch
+        language_skill_en: Englisch
+        language_skill_es: Spanisch
+        other_native_language: Andere Muttersprache

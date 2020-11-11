@@ -9,6 +9,9 @@ module Sjas::PeopleController
   extend ActiveSupport::Concern
 
   included do
-    self.permitted_attrs += [:place_of_origin]
+    self.permitted_attrs += [
+      :place_of_origin, :language_skill_de, :language_skill_fr, :language_skill_it,
+      :language_skill_en, :language_skill_es, :other_native_language
+    ]
   end
 end

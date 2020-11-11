@@ -4,3 +4,9 @@
 -#  https://github.com/hitobito/hitobito_sjas.
 
 = render_attrs(entry, :place_of_origin)
+
+- language_skills = [:language_skill_de, :language_skill_fr, :language_skill_it,
+                     :language_skill_en, :language_skill_es]
+- if entry.other_native_language.present?
+  - language_skills << :other_native_language
+= render_attrs(entry, *language_skills)
