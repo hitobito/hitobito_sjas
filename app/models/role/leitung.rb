@@ -9,4 +9,3 @@
 class Role::Leitung < ::Role
   self.permissions = []
 end
-

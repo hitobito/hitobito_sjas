@@ -1,14 +1,13 @@
 # encoding: utf-8
 # frozen_string_literal: true
 
-$LOAD_PATH.push File.expand_path('../lib', __FILE__)
+$LOAD_PATH.push File.expand_path('lib', __dir__)
 
 # Maintain your wagon's version:
 require 'hitobito_sjas/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  # rubocop:disable SingleSpaceBeforeFirstArg
   s.name        = 'hitobito_sjas'
   s.version     = HitobitoSjas::VERSION
   s.authors     = ['Matthias Viehweger', 'Mathis Hofer']
@@ -19,5 +18,6 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,db,lib}/**/*'] + ['Rakefile']
   s.test_files = Dir['test/**/*']
-  # rubocop:enable SingleSpaceBeforeFirstArg
+
+  s.required_ruby_version = '>= 2.5.5'
 end
