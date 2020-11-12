@@ -16,8 +16,8 @@ describe PeopleController do
   before { sign_in(user) }
 
   describe 'PUT update' do
-    it 'updates the SJAS attrs' do
-      params = {
+    let(:params) do
+      {
         id: user.id,
         group_id: groups(:root).id,
         person: {
@@ -31,19 +31,77 @@ describe PeopleController do
           other_native_language: 'Klingonisch'
         }
       }
+    end
 
+    it 'updates the first name' do
       patch :update, params: params
 
       user.reload
 
       expect(response).to have_http_status(302)
       expect(user.first_name).to eq('updated_name')
+    end
+
+    it 'updates the place of origin' do
+      patch :update, params: params
+
+      user.reload
+
+      expect(response).to have_http_status(302)
       expect(user.place_of_origin).to eq('Trubschachen BE')
+    end
+
+    it 'updates the german language skills' do
+      patch :update, params: params
+
+      user.reload
+
+      expect(response).to have_http_status(302)
       expect(user.language_skill_de).to eq('native')
+    end
+
+    it 'updates the french language skills' do
+      patch :update, params: params
+
+      user.reload
+
+      expect(response).to have_http_status(302)
       expect(user.language_skill_fr).to eq('good')
+    end
+
+    it 'updates the italian language skills' do
+      patch :update, params: params
+
+      user.reload
+
+      expect(response).to have_http_status(302)
       expect(user.language_skill_it).to eq('none')
+    end
+
+    it 'updates the english language skills' do
+      patch :update, params: params
+
+      user.reload
+
+      expect(response).to have_http_status(302)
       expect(user.language_skill_en).to eq('good')
+    end
+
+    it 'updates the spanish language skills' do
+      patch :update, params: params
+
+      user.reload
+
+      expect(response).to have_http_status(302)
       expect(user.language_skill_es).to eq('basic')
+    end
+
+    it 'updates the other native language' do
+      patch :update, params: params
+
+      user.reload
+
+      expect(response).to have_http_status(302)
       expect(user.other_native_language).to eq('Klingonisch')
     end
   end

@@ -29,6 +29,7 @@ module HitobitoSjas
       Event::Course.include Sjas::Event::Course
       Person.include Sjas::Person
 
+      # Controllers
       PeopleController.include Sjas::PeopleController
     end
 
