@@ -24,7 +24,7 @@ This hitobito wagon defines the organization hierarchy with groups and roles.
     * Teilnehmende: []
   * Stiftungsrat
     * Präsident*in: [:layer_read, :group_full]
-    * Vize-Präsident*in: [:layer_read]
+    * Vize-Präsident*in: [:layer_read, :group_full]
     * Kassier*in: [:layer_read]
     * Sekretär*in: [:layer_read, :group_full]
     * Beisitzer*in: [:layer_read]
