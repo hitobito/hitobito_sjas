@@ -8,6 +8,6 @@
 
 Group::Dachverband.seed_once(:parent_id, :short_name,
   parent_id: nil,
-  name: 'Stiftung für junge Auslandsschweizer',
+  name: 'Stiftung für junge Auslandschweizer',
   short_name: 'SJAS'
 )
