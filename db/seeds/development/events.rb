@@ -10,11 +10,41 @@ require Rails.root.join('db', 'seeds', 'support', 'event_seeder')
 
 srand(42)
 
-seeder = EventSeeder.new
+class SjasEventSeeder < EventSeeder
+
+  def seed_event(group_id, type)
+    values = event_values(group_id)
+    case type
+      when :course then seed_course(values)
+      when :camp then seed_camp(values)
+      when :base then seed_base_event(values)
+    end
+  end
+
+  def seed_camp(values)
+    date, number = values[:application_opening_at], values[:number]
+    event = Event::Camp.seed(:name, values.merge(name: "Lager #{number}")).first
+    seed_dates(event, date + 90.days)
+    seed_questions(event) if true?
+    seed_leaders(event)
+    3.times do
+      event.participant_types.each do |type|
+        seed_event_role(event, type)
+      end
+    end
+  end
+
+end
+
+seeder = SjasEventSeeder.new
 
 layer_types = Group.all_types.select(&:layer).collect(&:sti_name)
 Group.where(type: layer_types).pluck(:id).each do |group_id|
   5.times do
     seeder.seed_event(group_id, :base)
   end
+end
+
+5.times do
+  seeder.seed_event(Group.root.id, :camp)
 end

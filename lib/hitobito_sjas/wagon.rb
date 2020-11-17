@@ -29,8 +29,32 @@ module HitobitoSjas
       Event::Course.include Sjas::Event::Course
       Person.include Sjas::Person
 
+      # Abilities
+      GroupAbility.include Sjas::GroupAbility
+      EventAbility.abilities[Event::Camp] =
+        EventAbility.abilities[Event] # Camp has same abilities as event
+
+      # Decorators
+      EventDecorator.icons['Event::Camp'] = :campground
+
       # Controllers
       PeopleController.include Sjas::PeopleController
+      Event::ListsController.include Sjas::Event::ListsController
+
+      # Sheets
+      Sheet::Group.include Sjas::Sheet::Group
+      Sheet::Event::List.include Sjas::Sheet::Event::List
+
+      # Main navigation
+      index_courses = NavigationHelper::MAIN.index { |opts| opts[:label] == :courses }
+      NavigationHelper::MAIN.insert(
+        index_courses + 1,
+        label: :camps,
+        icon_name: :campground,
+        url: :list_camps_path,
+        active_for: %w(list_camps),
+        if: ->(_) { can?(:list_available, Event::Camp) }
+      )
     end
 
     initializer 'sjas.add_settings' do |_app|

@@ -9,6 +9,7 @@
 # SJAS
 class Group::Dachverband < ::Group
   self.layer = true
+  self.event_types = [Event, Event::Camp]
 
   self.default_children = [
     Group::DachverbandGeschaeftsstelle,

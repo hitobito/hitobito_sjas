@@ -130,6 +130,12 @@ de:
       group/fundraising/kontakt:
         one: Kontakt
 
+      ### ROLES
+
+      event/camp:
+        one: Lager
+        other: Lager
+
     attributes:
       person:
         place_of_origin: Heimatort
