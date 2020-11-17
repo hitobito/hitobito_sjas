@@ -1,22 +1,8 @@
+# frozen_string_literal: true
+
 #  Copyright (c) 2012-2020, Stiftung für junge Auslandssschweizer. This file is part of
 #  hitobito_sjas and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
-top_event:
-  name: Top Event
-  groups: root
-
-top_course:
-  name: Top Course
-  groups: root
-  type: Event::Course
-  kind: dummy
-  priorization: true
-  requires_approval: true
-  external_applications: true
-
-top_camp:
-  name: Top Camp
-  groups: root
+Fabricator(:camp, from: :event, class_name: :'Event::Camp') do; end

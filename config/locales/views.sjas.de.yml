@@ -5,3 +5,13 @@
 
 de:
   dummy: Platzhalter für Übersetzungen
+
+  events:
+    global:
+      link:
+        add_event/camp: Lager erstellen
+    new:
+      title_event/camp: Lager erstellen
+
+  navigation:
+    camps: Lager

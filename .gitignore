@@ -15,6 +15,7 @@ zeus.json
 .rakeTasks
 C\:*
 .pry_history
+.byebug_history
 
 # ignore Gemfile.lock for wagons
 Gemfile.lock

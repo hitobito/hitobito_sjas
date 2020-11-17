@@ -62,5 +62,5 @@ geschaeftsstelle = Group::DachverbandGeschaeftsstelle.first
                         Group::DachverbandGeschaeftsstelle::Sachbearbeitung),
 ].map do |roles|
   primary_role = Array(roles).first
-  seeder.seed_role(primary_role.person, root, Group::Dachverband::Admin)
+  seeder.seed_role(primary_role.person, root, Group::Dachverband::Admin) if primary_role
 end

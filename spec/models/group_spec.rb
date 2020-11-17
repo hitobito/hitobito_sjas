@@ -12,4 +12,20 @@ describe Group do
 
   include_examples 'group types'
 
+  context Event::Course do
+    it 'is not enabled for any group type' do
+      course_groups = Group.all_types.select { |g| g.event_types.include?(Event::Course) }
+      expect(course_groups).to eq([])
+    end
+  end
+
+  context Event::Camp do
+    it 'is only enabled for root group type' do
+      camp_groups = Group.all_types.select { |g| g.event_types.include?(Event::Camp) }
+      expect(camp_groups).to match_array(Group::Dachverband)
+      # Remark: if you enable camps for more group types than the
+      # root, please extend the GroupAbility and EventAbility specs
+    end
+  end
+
 end
