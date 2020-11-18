@@ -27,6 +27,7 @@ module HitobitoSjas
       Group.include Sjas::Group
       Event.include Sjas::Event
       Event::Course.include Sjas::Event::Course
+      Event::ParticipationContactData.include Sjas::Event::ParticipationContactData
       Person.include Sjas::Person
 
       # Controllers
