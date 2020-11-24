@@ -29,10 +29,10 @@ describe GroupAbility do
     end
   end
 
-  context 'layer read' do
+  context 'group read' do
     let(:role) { Fabricate(Group::DachverbandStiftungsrat::Praesident.name.to_sym, group: groups(:stiftungsrat)) }
 
-    context 'in same layer' do
+    context 'in other group on same layer' do
       let(:group) { groups(:root) }
 
       it 'may show camps' do
@@ -40,7 +40,7 @@ describe GroupAbility do
       end
 
       it 'may export camps' do
-        is_expected.to be_able_to(:'export_event/camps', group)
+        is_expected.not_to be_able_to(:'export_event/camps', group)
       end
 
     end
