@@ -28,18 +28,13 @@ This hitobito wagon defines the organization hierarchy with groups and roles.
     * Kassier*in: [:layer_read]
     * Sekretär*in: [:layer_read, :group_full]
     * Beisitzer*in: [:layer_read]
-* Stiftung
-  * Stiftung
-    * Kontakt: []
-* Partner
-  * Partner
-    * Partner: []
-* Kantonalkomitee
-  * Kantonalkomitee
+  * Externe
     * Adressverwalter*in: [:group_full, :contact_data]
     * Kontakt: []
-* Fundraising
-  * Fundraising
+  * Stiftung
+    * Kontakt: []
+* Kantonalkomitee
+  * Kantonalkomitee
     * Adressverwalter*in: [:group_full, :contact_data]
     * Kontakt: []
 
