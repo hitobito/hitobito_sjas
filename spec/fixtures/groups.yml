@@ -71,9 +71,9 @@ zg:
   name: Zug
   short_name: ZG
   type: Group::Kantonalkomitee
-stiftungen:
+kantonal_komitee_stiftungen:
   parent: root
-  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:stiftungen)%>"
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:kantonal_komitee_stiftungen)%>"
   lft: 20
   rgt: 21
   name: Stiftungen
@@ -99,7 +99,7 @@ institutionen:
   rgt: 8
   name: Institutionen
   type: Group::DachverbandExterne
-stiftungen:
+externe_stiftungen:
   parent: externe
   layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
   lft: 11
