@@ -29,11 +29,11 @@ de:
         one: Stiftungsrat
         other: Stiftungsräte
 
-      group/stiftung:
+      group/dachverband_stiftung:
         one: Stiftung
         other: Stiftungen
 
-      group/partner:
+      group/dachverband_partner:
         one: Partner
         other: Partner
 
@@ -41,9 +41,9 @@ de:
         one: Kantonalkomitee
         other: Kantonalkomitees
 
-      group/fundraising:
-        one: Fundraising
-        other: Fundraising
+      group/dachverband_externe:
+        one: Externe
+        other: Externe
 
       ### ROLES
 
@@ -112,10 +112,10 @@ de:
         one: Beisitzer*in
         description:
 
-      group/stiftung/kontakt:
+      group/dachverband_stiftung/kontakt:
         one: Kontakt
 
-      group/partner/partner:
+      group/dachverband_partner/partner:
         one: Partner
 
       group/kantonalkomitee/adressverwalter:
@@ -124,10 +124,10 @@ de:
       group/kantonalkomitee/kontakt:
         one: Kontakt
 
-      group/fundraising/adressverwalter:
+      group/dachverband_externe/adressverwalter:
         one: Adressverwalter*in
 
-      group/fundraising/kontakt:
+      group/dachverband_externe/kontakt:
         one: Kontakt
 
       ### ROLES
