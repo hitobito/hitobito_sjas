@@ -6,13 +6,11 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 
-# Partner
-#     Partner[]
-class Group::Partner < ::Group
-  self.layer = true
-
-  class Partner < ::Role::Kontakt
+# DachverbandStiftung
+#     Kontakte[]
+class Group::DachverbandStiftung < ::Group
+  class Kontakt < ::Role::Kontakt
   end
 
-  roles Partner
+  roles Kontakt
 end

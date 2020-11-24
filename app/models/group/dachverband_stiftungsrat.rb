@@ -6,31 +6,25 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 
-# Stiftungsrat
-#     Präsident\*in[]
-#     Vize-Präsident\*in[]
-#     Kassier\*in[]
-#     Sekretär\*in[]
-#     Beisitzer\*in[]
 class Group::DachverbandStiftungsrat < ::Group
   class Praesident < ::Role
-    self.permissions = [:layer_read, :group_full]
+    self.permissions = [:group_full]
   end
 
   class Vizepraesident < ::Role
-    self.permissions = [:layer_read, :group_full]
+    self.permissions = [:group_full]
   end
 
   class Kassier < ::Role
-    self.permissions = [:layer_read]
+    self.permissions = [:group_read]
   end
 
   class Sekretaer < ::Role
-    self.permissions = [:layer_read, :group_full]
+    self.permissions = [:group_full]
   end
 
   class Beisitzer < ::Role
-    self.permissions = [:layer_read]
+    self.permissions = [:group_read]
   end
 
   roles Praesident, Vizepraesident, Kassier, Sekretaer, Beisitzer

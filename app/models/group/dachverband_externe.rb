@@ -6,13 +6,20 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 
-# Stiftung
-#     Kontake[]
-class Group::Stiftung < ::Group
-  self.layer = true
+# Externe
+#     Institutionen/Stiftungen[]
+#     Privatpersonen[]
+#     Dienstleister[]
+#     Partner
+class Group::DachverbandExterne < ::Group
+  children Group::DachverbandExterne,
+           Group::DachverbandStiftung
+
+  class Adressverwalter < ::Role::Adressverwalter
+  end
 
   class Kontakt < ::Role::Kontakt
   end
 
-  roles Kontakt
+  roles Adressverwalter, Kontakt
 end

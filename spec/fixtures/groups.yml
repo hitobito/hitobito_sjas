@@ -3,116 +3,106 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
+# mostly generated with 'rake app:fixtures:groups'
 
 root:
   parent:
   layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
   lft: 1
-  rgt: 32
-  name: Stiftung für junge Auslandsschweizer
+  rgt: 28
+  name: Stiftung für junge Auslandschweizer
   type: Group::Dachverband
 geschaeftsstelle:
   parent: root
   layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
-  lft: 10
-  rgt: 11
+  lft: 14
+  rgt: 15
   name: Geschäftsstelle
   type: Group::DachverbandGeschaeftsstelle
 leitungspool:
   parent: root
   layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
-  lft: 16
-  rgt: 17
+  lft: 18
+  rgt: 19
   name: Leitungspool
   type: Group::DachverbandLeitungspool
 teilnehmerpool:
   parent: root
   layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
-  lft: 28
-  rgt: 29
+  lft: 24
+  rgt: 25
   name: Teilnehmerpool
   type: Group::DachverbandTeilnehmerpool
 stiftungsrat:
   parent: root
   layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
-  lft: 26
-  rgt: 27
-  name: Stiftungsrat
-  type: Group::DachverbandStiftungsrat
-stiftung_fuer_kinder:
-  parent: root
-  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:stiftung_fuer_kinder)%>"
   lft: 22
   rgt: 23
-  name: Stiftung für Kinder
-  type: Group::Stiftung
-stiftung_fuer_schweizer:
+  name: Stiftungsrat
+  type: Group::DachverbandStiftungsrat
+externe:
   parent: root
-  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:stiftung_fuer_schweizer)%>"
-  lft: 24
-  rgt: 25
-  name: Stiftung für Schweizer
-  type: Group::Stiftung
-pbs:
-  parent: root
-  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:pbs)%>"
-  lft: 18
-  rgt: 19
-  name: PBS
-  type: Group::Partner
-aso:
-  parent: root
-  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:aso)%>"
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
   lft: 4
-  rgt: 5
-  name: ASO
-  type: Group::Partner
-eda:
-  parent: root
-  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:eda)%>"
-  lft: 6
-  rgt: 7
-  name: EDA
-  type: Group::Partner
+  rgt: 13
+  name: Externe
+  type: Group::DachverbandExterne
 ag_so:
   parent: root
   layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:ag_so)%>"
   lft: 2
   rgt: 3
-  name: AG/SO
+  name: Aargau und Solothurn
+  short_name: 'AG/SO'
   type: Group::Kantonalkomitee
 gr:
   parent: root
   layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:gr)%>"
-  lft: 12
-  rgt: 13
-  name: GR
+  lft: 16
+  rgt: 17
+  name: Graubünden
+  short_name: GR
   type: Group::Kantonalkomitee
 zg:
   parent: root
   layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zg)%>"
-  lft: 30
-  rgt: 31
-  name: ZG
+  lft: 26
+  rgt: 27
+  name: Zug
+  short_name: ZG
   type: Group::Kantonalkomitee
-institution_a:
+stiftungen:
   parent: root
-  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:institution_a)%>"
-  lft: 14
-  rgt: 15
-  name: Institution A
-  type: Group::Fundraising
-elternverein_b:
-  parent: root
-  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:elternverein_b)%>"
-  lft: 8
-  rgt: 9
-  name: Elternverein B
-  type: Group::Fundraising
-privatspender_c:
-  parent: root
-  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:privatspender_c)%>"
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:stiftungen)%>"
   lft: 20
   rgt: 21
-  name: Privatspender C
-  type: Group::Fundraising
+  name: Stiftungen
+  type: Group::Kantonalkomitee
+partner:
+  parent: externe
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 9
+  rgt: 10
+  name: Partner
+  type: Group::DachverbandExterne
+dienstleister:
+  parent: externe
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 5
+  rgt: 6
+  name: Dienstleister
+  type: Group::DachverbandExterne
+institutionen:
+  parent: externe
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 7
+  rgt: 8
+  name: Institutionen
+  type: Group::DachverbandExterne
+stiftungen:
+  parent: externe
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 11
+  rgt: 12
+  name: Stiftungen
+  type: Group::DachverbandStiftung

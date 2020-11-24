@@ -6,23 +6,21 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 
-# require Rails.root.join('db', 'seeds', 'support', 'group_seeder')
-# seeder = GroupSeeder.new
-# srand(42)
-
 root = Group.root
 
-# setup some more groups layers
-Group::Stiftung.seed_once(:name, parent_id: root.id, name: "Stiftung für Kinder")
-Group::Stiftung.seed_once(:name, parent_id: root.id, name: "Stiftung für Schweizer")
-Group::Partner.seed_once(:name, parent_id: root.id, name: "PBS")
-Group::Partner.seed_once(:name, parent_id: root.id, name: "ASO")
-Group::Partner.seed_once(:name, parent_id: root.id, name: "EDA")
-Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "AG/SO")
-Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "GR")
-Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: "ZG")
-Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Institutionen/Stiftungen", short_name: 'Institutionen')
-Group::Fundraising.seed_once(:name, parent_id: root.id, name: "Privatspender")
+Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: 'Aargau und Solothurn', short_name: 'AG/SO')
+Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: 'Graubünden',           short_name: 'GR')
+Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: 'Zug',                  short_name: 'ZG')
+Group::Kantonalkomitee.seed_once(:name, parent_id: root.id, name: 'Stiftungen')
 
-puts "Rebuilding Nested Set..."
+externe = Group::DachverbandExterne.where(parent_id: root.id, name: 'Externe').first
+
+Group::DachverbandExterne.seed_once(:name,  parent_id: externe.id, name: 'Partner')
+Group::DachverbandExterne.seed_once(:name,  parent_id: externe.id, name: 'Dienstleister')
+Group::DachverbandExterne.seed_once(:name,  parent_id: externe.id, name: 'Institutionen')
+Group::DachverbandExterne.seed_once(:name,  parent_id: externe.id, name: 'Privatpersonen')
+Group::DachverbandStiftung.seed_once(:name, parent_id: externe.id, name: 'Stiftungen')
+
+
+puts 'Rebuilding Nested Set...'
 Group.rebuild!

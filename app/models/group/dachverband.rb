@@ -15,17 +15,17 @@ class Group::Dachverband < ::Group
     Group::DachverbandGeschaeftsstelle,
     Group::DachverbandLeitungspool,
     Group::DachverbandTeilnehmerpool,
-    Group::DachverbandStiftungsrat
+    Group::DachverbandStiftungsrat,
+    Group::DachverbandExterne
   ]
 
   children Group::DachverbandGeschaeftsstelle,
            Group::DachverbandLeitungspool,
            Group::DachverbandTeilnehmerpool,
            Group::DachverbandStiftungsrat,
-           Group::Stiftung,
-           Group::Partner,
-           Group::Kantonalkomitee,
-           Group::Fundraising
+           Group::DachverbandStiftung,
+           Group::DachverbandExterne,
+           Group::Kantonalkomitee
 
   class Admin < ::Role::Admin
     self.permissions += [:impersonation]

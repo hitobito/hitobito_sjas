@@ -23,23 +23,18 @@ This hitobito wagon defines the organization hierarchy with groups and roles.
   * Teilnehmerpool
     * Teilnehmende: []
   * Stiftungsrat
-    * Präsident*in: [:layer_read, :group_full]
-    * Vize-Präsident*in: [:layer_read, :group_full]
-    * Kassier*in: [:layer_read]
-    * Sekretär*in: [:layer_read, :group_full]
-    * Beisitzer*in: [:layer_read]
-* Stiftung
-  * Stiftung
-    * Kontakt: []
-* Partner
-  * Partner
-    * Partner: []
-* Kantonalkomitee
-  * Kantonalkomitee
+    * Präsident*in: [:group_full]
+    * Vize-Präsident*in: [:group_full]
+    * Kassier*in: [:group_read]
+    * Sekretär*in: [:group_full]
+    * Beisitzer*in: [:group_read]
+  * Externe
     * Adressverwalter*in: [:group_full, :contact_data]
     * Kontakt: []
-* Fundraising
-  * Fundraising
+  * Stiftung
+    * Kontakt: []
+* Kantonalkomitee
+  * Kantonalkomitee
     * Adressverwalter*in: [:group_full, :contact_data]
     * Kontakt: []
 
