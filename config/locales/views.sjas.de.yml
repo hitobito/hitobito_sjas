@@ -4,7 +4,10 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 de:
-  dummy: Platzhalter für Übersetzungen
+  event:
+    application_market:
+      popover_waiting_list:
+        waiting_list_info: Setze diese Person auf die Warteliste.
 
   events:
     global:

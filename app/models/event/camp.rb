@@ -5,4 +5,8 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-class Event::Camp < Event; end
+class Event::Camp < Event
+  self.used_attributes += [:waiting_list]
+
+  self.supports_applications = true
+end
