@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2012-2020, Stiftung für junge Auslandschweizer. This file is part of
+#  Copyright (c) 2012-2021, Stiftung für junge Auslandschweizer. This file is part of
 #  hitobito_sjas and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
@@ -46,6 +46,37 @@ describe Event::ListsController do
       create_event(:root, type: :camp, start_at: Time.zone.parse('2020-11-1'))
 
       get :camps
+
+      expect(assigns(:grouped_events).keys).to eq(['Oktober 2020', 'November 2020'])
+    end
+  end
+
+  context 'GET #events' do
+    it 'populates events by start_at' do
+      event1 = create_event(:root, type: :event, start_at: 1.year.from_now, finish_at: 1.year.from_now + 5.days)
+      event2 = create_event(:root, type: :event, start_at: 1.day.from_now, finish_at: 5.days.from_now)
+      event3 = create_event(:root, type: :event, start_at: 1.year.ago, finish_at: 1.year.ago + 5.days)
+
+      get :events
+
+      # Hint: We do not test group hierarchy order here, since camps
+      # are only possible within root group
+      expect(assigns(:grouped_events).values).to eq([[event2], [event1]])
+    end
+
+    it 'does not include camps' do
+      create_event(:root, type: :camp, start_at: 1.year.from_now, finish_at: 1.year.from_now + 5.days)
+
+      get :events
+
+      expect(assigns(:grouped_events)).to be_empty
+    end
+
+    it 'groups by month' do
+      create_event(:root, start_at: Time.zone.parse('2020-10-30'))
+      create_event(:root, start_at: Time.zone.parse('2020-11-1'))
+
+      get :events
 
       expect(assigns(:grouped_events).keys).to eq(['Oktober 2020', 'November 2020'])
     end
