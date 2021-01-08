@@ -5,3 +5,10 @@
 
 = field_set_tag do
   = f.labeled_input_field(:place_of_origin) if entry.show_attr?(:place_of_origin)
+
+= field_set_tag do
+  - %w(de fr it en es).each do |l|
+    = f.labeled("language_skill_#{l}") do
+      - possible_person_language_skills.each do |key, value|
+        = f.inline_radio_button("language_skill_#{l}", key, value)
+  = f.labeled_input_fields :other_native_language

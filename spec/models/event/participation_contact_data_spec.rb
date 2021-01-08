@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2012-2020, Stiftung für junge Auslandssschweizer. This file is part of
+#  Copyright (c) 2012-2021, Stiftung für junge Auslandssschweizer. This file is part of
 #  hitobito_sjas and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
@@ -43,6 +43,35 @@ describe Event::ParticipationContactData do
 
       person.reload
       expect(person.reload.place_of_origin).to eq('Trubschachen BE')
+    end
+  end
+
+  context 'language_skills' do
+    %i[de fr it en es].each do |lang|
+      context "'#{lang}'" do
+        it "validates mandatory language_skill_#{lang}" do
+          contact_data = participation_contact_data(attributes)
+          event.update!(required_contact_attrs: ["language_skill_#{lang}"])
+
+          expect(contact_data).not_to be_valid
+          expect(contact_data.errors.details).to eq(:"language_skill_#{lang}" => [error: 'muss ausgefüllt werden'])
+        end
+
+        it "allows blank value for optional language_skill_#{lang}" do
+          contact_data = participation_contact_data(attributes)
+
+          expect(contact_data).to be_valid
+        end
+
+        it "updates language_skill_#{lang}" do
+          attributes[:"language_skill_#{lang}"] = 'native'
+          contact_data = participation_contact_data(attributes)
+          contact_data.save
+
+          person.reload
+          expect(person.send(:"language_skill_#{lang}")).to eq('native')
+        end
+      end
     end
   end
 
