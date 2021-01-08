@@ -17,7 +17,7 @@ module Sjas
         # ::Event::Role::Helper,
         # ::Event::Role::Treasurer,
         # ::Event::Role::Speaker,
-        ::Event::Course::Role::Participant,
+        ::Event::Course::Role::Participant
       ]
     end
   end
