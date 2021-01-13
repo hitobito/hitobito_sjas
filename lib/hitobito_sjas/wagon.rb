@@ -46,6 +46,12 @@ module HitobitoSjas
       Sheet::Group.include Sjas::Sheet::Group
       Sheet::Event::List.include Sjas::Sheet::Event::List
 
+      # Mailers
+      Event::ParticipationMailer.prepend Sjas::Event::ParticipationMailer
+
+      # Jobs
+      Event::ParticipationConfirmationJob.prepend Sjas::Event::ParticipationConfirmationJob
+
       # Main navigation
       index_courses = NavigationHelper::MAIN.index { |opts| opts[:label] == :courses }
       NavigationHelper::MAIN.insert(
