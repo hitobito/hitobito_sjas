@@ -1,0 +1,155 @@
+#  Copyright (c) 2012-2021, Stiftung für junge Auslandschweizer. This file is part of
+#  hitobito_sjas and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_sjas.
+
+
+it:
+  activerecord:
+    models:
+
+      ### GROUPS
+
+      group/dachverband:
+        one: FGSE
+
+      group/dachverband_geschaeftsstelle:
+        one: Cancelleria
+        other: Segreterie
+
+      group/dachverband_leitungspool:
+        one: Insegnante
+        other: Pool direttivi
+
+      group/dachverband_teilnehmerpool:
+        one: Partecipante
+        other: Pool di partecipanti
+
+      group/dachverband_stiftungsrat:
+        one: Consiglio di fondazione
+        other: Consigli di fondazione
+
+      group/dachverband_stiftung:
+        one: Fondazioni
+        other: Fondazioni
+
+      group/dachverband_partner:
+        one: Partner
+        other: Partner
+
+      group/kantonalkomitee:
+        one: Comitato cantonale
+        other: Comitati cantonali
+
+      group/dachverband_externe:
+        one: ''
+        other: ''
+
+      ### ROLES
+
+      group/dachverband/admin:
+        one: Amministratore
+        description:
+
+      group/dachverband_geschaeftsstelle/adressverwalter:
+        one: Responsabile indirizzi
+        description:
+
+      group/dachverband_geschaeftsstelle/projektleitung:
+        one: Gestione progetti
+        description:
+
+      group/dachverband_geschaeftsstelle/sachbearbeitung:
+        one: Elaborazione incarichi
+        description:
+
+      group/dachverband_geschaeftsstelle/geschaeftsfuehrung:
+        one: Direzione aziendale
+        description:
+
+      group/dachverband_leitungspool/lagerleitung:
+        one: Monitori/trici
+        description:
+
+      group/dachverband_leitungspool/kursleitung:
+        one: Istruttori/trici
+        description:
+
+      group/dachverband_leitungspool/mitleitung:
+        one: Codirettori/trici
+        description:
+
+      group/dachverband_leitungspool/koch:
+        one: Cuoco/a
+        description:
+
+      group/dachverband_leitungspool/zivildienstleistender:
+        one: ''
+        other: ''
+        description:
+
+      group/dachverband_teilnehmerpool/teilnehmer:
+        one: Partecipanti
+        description: Partecipanti alle colonie
+
+      group/dachverband_stiftungsrat/praesident:
+        one: Presidente
+        description:
+
+      group/dachverband_stiftungsrat/vizepraesident:
+        one: Vicepresidente
+        description:
+
+      group/dachverband_stiftungsrat/kassier:
+        one: Cassiere/a
+        description:
+
+      group/dachverband_stiftungsrat/sekretaer:
+        one: Segretario/a
+        description:
+
+      group/dachverband_stiftungsrat/beisitzer:
+        one: Proprietario/a
+        description:
+
+      group/dachverband_stiftung/kontakt:
+        one: Contatto
+
+      group/dachverband_partner/partner:
+        one: Partner
+
+      group/kantonalkomitee/adressverwalter:
+        one: Responsabile indirizzi
+
+      group/kantonalkomitee/kontakt:
+        one: Contatto
+
+      group/dachverband_externe/adressverwalter:
+        one: Responsabile indirizzi
+
+      group/dachverband_externe/kontakt:
+        one: Contatto
+
+      ### ROLES
+
+      event/camp:
+        one: Colonie
+        other: Colonie
+
+    attributes:
+      person:
+        place_of_origin: ""
+        language_skills:
+          native: Madrelingua
+          good: Buone conoscenze
+          basic: Conoscenze elementari
+          none: Nessuna conoscenza
+        language_skill_de: Tedesco
+        language_skill_fr: Francese
+        language_skill_it: Italiano
+        language_skill_en: Inglese
+        language_skill_es: Spagnolo
+        other_native_language: Altra madrelingua
+
+      event/camp:
+        description: ""

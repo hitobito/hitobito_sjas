@@ -1,0 +1,155 @@
+#  Copyright (c) 2012-2021, Stiftung für junge Auslandschweizer. This file is part of
+#  hitobito_sjas and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_sjas.
+
+
+fr:
+  activerecord:
+    models:
+
+      ### GROUPS
+
+      group/dachverband:
+        one: FESE
+
+      group/dachverband_geschaeftsstelle:
+        one: Bureau
+        other: Bureau
+
+      group/dachverband_leitungspool:
+        one: Moniteur/Monitrice
+        other: Moniteur/Monitrice
+
+      group/dachverband_teilnehmerpool:
+        one: Participants/ Participantes
+        other: Participants/ Participantes
+
+      group/dachverband_stiftungsrat:
+        one: Conseil de Fondation
+        other: Conseil de Fondation
+
+      group/dachverband_stiftung:
+        one: Fondations
+        other: Fondations
+
+      group/dachverband_partner:
+        one: Partenaire
+        other: Partenaires
+
+      group/kantonalkomitee:
+        one: Comités cantonaux
+        other: Comités cantonaux
+
+      group/dachverband_externe:
+        one: Externe
+        other: Externe
+
+      ### ROLES
+
+      group/dachverband/admin:
+        one: Administrateur / Administratrice
+        description:
+
+      group/dachverband_geschaeftsstelle/adressverwalter:
+        one: Gérant d'adresses / Gérante d'adresses
+        description:
+
+      group/dachverband_geschaeftsstelle/projektleitung:
+        one: Responsable de projets
+        description:
+
+      group/dachverband_geschaeftsstelle/sachbearbeitung:
+        one: Responsable du dossier
+        description:
+
+      group/dachverband_geschaeftsstelle/geschaeftsfuehrung:
+        one: Directeur / Directrice
+        description:
+
+      group/dachverband_leitungspool/lagerleitung:
+        one: Chef de camp
+        description:
+
+      group/dachverband_leitungspool/kursleitung:
+        one: Chef de formation
+        description:
+
+      group/dachverband_leitungspool/mitleitung:
+        one: Moniteur / Monitrice
+        description:
+
+      group/dachverband_leitungspool/koch:
+        one: Cuisinier / Cuisinière
+        description:
+
+      group/dachverband_leitungspool/zivildienstleistender:
+        one: Civilistes
+        other: Civilistes
+        description:
+
+      group/dachverband_teilnehmerpool/teilnehmer:
+        one: Participants / Participantes
+        description: Participants de camp / Participantes de camp
+
+      group/dachverband_stiftungsrat/praesident:
+        one: Président/e
+        description:
+
+      group/dachverband_stiftungsrat/vizepraesident:
+        one: Vice-Président/e
+        description:
+
+      group/dachverband_stiftungsrat/kassier:
+        one: Trésorier / Trésorière
+        description:
+
+      group/dachverband_stiftungsrat/sekretaer:
+        one: Secrétaire
+        description:
+
+      group/dachverband_stiftungsrat/beisitzer:
+        one: Assesseur / Assesseuse
+        description:
+
+      group/dachverband_stiftung/kontakt:
+        one: Contact
+
+      group/dachverband_partner/partner:
+        one: Partenaire
+
+      group/kantonalkomitee/adressverwalter:
+        one: Gérant d'adresses / Gérante d'adresses
+
+      group/kantonalkomitee/kontakt:
+        one: Contact
+
+      group/dachverband_externe/adressverwalter:
+        one: Gérant d'adresses / Gérante d'adresses
+
+      group/dachverband_externe/kontakt:
+        one: Contact
+
+      ### ROLES
+
+      event/camp:
+        one: Camps
+        other: Camps
+
+    attributes:
+      person:
+        place_of_origin: Lieu d'origine/canton
+        language_skills:
+          native: Langue maternelle
+          good: Bonne connaissances
+          basic: Connaissances de base
+          none: Pas de connaissances
+        language_skill_de: Allemand
+        language_skill_fr: Français
+        language_skill_it: Italien
+        language_skill_en: Anglais
+        language_skill_es: Espagnole
+        other_native_language: Autre langue maternelle
+
+      event/camp:
+        description: Catégorie d'âge

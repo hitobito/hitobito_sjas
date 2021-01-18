@@ -1,0 +1,155 @@
+#  Copyright (c) 2012-2021, Stiftung für junge Auslandschweizer. This file is part of
+#  hitobito_sjas and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_sjas.
+
+
+en:
+  activerecord:
+    models:
+
+      ### GROUPS
+
+      group/dachverband:
+        one: FYSA
+
+      group/dachverband_geschaeftsstelle:
+        one: Office
+        other: Office
+
+      group/dachverband_leitungspool:
+        one: Camp leaders
+        other: Camp leaders
+
+      group/dachverband_teilnehmerpool:
+        one: Participants
+        other: Participants
+
+      group/dachverband_stiftungsrat:
+        one: Foundation council
+        other: Foundation council
+
+      group/dachverband_stiftung:
+        one: Foundations
+        other: Foundations
+
+      group/dachverband_partner:
+        one: Partner
+        other: Partner
+
+      group/kantonalkomitee:
+        one: Committee of the cantons
+        other: Committee of the cantons
+
+      group/dachverband_externe:
+        one: Externals
+        other: Externals
+
+      ### ROLES
+
+      group/dachverband/admin:
+        one: Administrator
+        description:
+
+      group/dachverband_geschaeftsstelle/adressverwalter:
+        one: Adressadministrator
+        description:
+
+      group/dachverband_geschaeftsstelle/projektleitung:
+        one: Project management
+        description:
+
+      group/dachverband_geschaeftsstelle/sachbearbeitung:
+        one: Administrator
+        description:
+
+      group/dachverband_geschaeftsstelle/geschaeftsfuehrung:
+        one: Office manager
+        description:
+
+      group/dachverband_leitungspool/lagerleitung:
+        one: Chief of Staff
+        description:
+
+      group/dachverband_leitungspool/kursleitung:
+        one: Course Instructor
+        description:
+
+      group/dachverband_leitungspool/mitleitung:
+        one: Camp leader
+        description:
+
+      group/dachverband_leitungspool/koch:
+        one: Cook
+        description:
+
+      group/dachverband_leitungspool/zivildienstleistender:
+        one: Provider of community service
+        other: Provider of community service
+        description:
+
+      group/dachverband_teilnehmerpool/teilnehmer:
+        one: Participants
+        description: Camp participants
+
+      group/dachverband_stiftungsrat/praesident:
+        one: President
+        description:
+
+      group/dachverband_stiftungsrat/vizepraesident:
+        one: Vice-President
+        description:
+
+      group/dachverband_stiftungsrat/kassier:
+        one: Treasurer
+        description:
+
+      group/dachverband_stiftungsrat/sekretaer:
+        one: Secretary
+        description:
+
+      group/dachverband_stiftungsrat/beisitzer:
+        one: Assessor
+        description:
+
+      group/dachverband_stiftung/kontakt:
+        one: Contact
+
+      group/dachverband_partner/partner:
+        one: Partner
+
+      group/kantonalkomitee/adressverwalter:
+        one: Adressadministrator
+
+      group/kantonalkomitee/kontakt:
+        one: Contact
+
+      group/dachverband_externe/adressverwalter:
+        one: Adressadministrator
+
+      group/dachverband_externe/kontakt:
+        one: Contact
+
+      ### ROLES
+
+      event/camp:
+        one: Camps
+        other: Camps
+
+    attributes:
+      person:
+        place_of_origin: Hometown/Canton
+        language_skills:
+          native: First language
+          good: Good knowledge
+          basic: Basic knowledge
+          none: No knowledge
+        language_skill_de: German
+        language_skill_fr: French
+        language_skill_it: Italian
+        language_skill_en: English
+        language_skill_es: Spanish
+        other_native_language: Other first language
+
+      event/camp:
+        description: Age group
