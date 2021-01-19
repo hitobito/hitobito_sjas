@@ -1,0 +1,26 @@
+#  Copyright (c) 2012-2021, Stiftung für junge Auslandschweizer. This file is part of
+#  hitobito_sjas and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_sjas.
+
+top_event_de:
+  event_id: <%= ActiveRecord::FixtureSet.identify(:top_event) %>
+  locale: de
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+  name: Top Event
+
+top_course_de:
+  event_id: <%= ActiveRecord::FixtureSet.identify(:top_course) %>
+  locale: de
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+  name: Top Course
+
+top_camp_de:
+  event_id: <%= ActiveRecord::FixtureSet.identify(:top_camp) %>
+  locale: de
+  created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
+  name: Top Camp
+
