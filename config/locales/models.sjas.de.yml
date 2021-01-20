@@ -90,7 +90,7 @@ de:
 
       group/dachverband_teilnehmerpool/teilnehmer:
         one: Teilnehmende
-        description: Teilnehmer an Lagern
+        description: Teilnehmer an Ferienlagern
 
       group/dachverband_stiftungsrat/praesident:
         one: Präsident*in
@@ -133,8 +133,8 @@ de:
       ### ROLES
 
       event/camp:
-        one: Lager
-        other: Lager
+        one: Ferienlager
+        other: Ferienlager
 
     attributes:
       person:

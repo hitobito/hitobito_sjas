@@ -16,9 +16,9 @@ de:
   events:
     global:
       link:
-        add_event/camp: Lager erstellen
+        add_event/camp: Ferienlager erstellen
     new:
-      title_event/camp: Lager erstellen
+      title_event/camp: Ferienlager erstellen
 
   navigation:
-    camps: Lager
+    camps: Ferienlager
