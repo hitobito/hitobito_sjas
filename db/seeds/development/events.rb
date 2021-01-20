@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2012-2020, Stiftung für junge Auslandschweizer. This file is part of
+#  Copyright (c) 2012-2021, Stiftung für junge Auslandschweizer. This file is part of
 #  hitobito_sjas and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
@@ -23,7 +23,10 @@ class SjasEventSeeder < EventSeeder
 
   def seed_camp(values)
     date, number = values[:application_opening_at], values[:number]
-    event = Event::Camp.seed(:name, values.merge(name: "Lager #{number}")).first
+    event = Event::Camp.find_or_initialize_by(name: "Lager #{number}")
+    event.attributes = values
+    event.save(validate: false)
+
     seed_dates(event, date + 90.days)
     seed_questions(event) if true?
     seed_leaders(event)
