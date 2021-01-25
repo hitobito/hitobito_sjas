@@ -24,7 +24,7 @@ module HitobitoSjas
       # extend application classes here
 
       # Models
-      Group.include Sjas::Group
+      Group.prepend Sjas::Group
       Event.include Sjas::Event
       Event::Course.include Sjas::Event::Course
       Event::ParticipationContactData.include Sjas::Event::ParticipationContactData
