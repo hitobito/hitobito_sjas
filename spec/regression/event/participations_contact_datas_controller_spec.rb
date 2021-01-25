@@ -67,7 +67,7 @@ describe Event::ParticipationContactDatasController, type: :controller do
 
       is_expected.to render_template(:edit)
 
-      expect(dom).to have_selector('.alert-error li', text: 'Heimatort/Kanton muss ausgefüllt werden')
+      expect(dom).to have_selector('.alert-error li', text: 'Heimatort inkl. Kanton muss ausgefüllt werden')
     end
 
     it 'updates place of origin attribute and redirects to event questions' do
