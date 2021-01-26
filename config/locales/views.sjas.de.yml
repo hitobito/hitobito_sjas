@@ -12,6 +12,11 @@ de:
     application_market:
       popover_waiting_list:
         waiting_list_info: Setze diese Person auf die Warteliste.
+    participations:
+      print:
+        heading_event/camp: Anmeldung Ferienlager
+        requirements_for_event_camp: Voraussetzungen für das Ferienlager
+        read_and_agreed_for_event_camp: Ich erfülle die Voraussetzungen für das Ferienlager, habe die Ferienlagerbeschreibung gelesen und bin damit einverstanden.
 
   events:
     global:
