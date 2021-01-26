@@ -12,7 +12,7 @@ en:
 
       group/dachverband:
         one: FYSA
-        name: The Foundation for Young Swiss Abroad
+        name: Foundation for Young Swiss Abroad
 
       group/dachverband_geschaeftsstelle:
         one: Office
@@ -39,8 +39,8 @@ en:
         other: Partner
 
       group/kantonalkomitee:
-        one: Committee of the cantons
-        other: Committee of the cantons
+        one: Cantonal Committees
+        other: Cantonal Committees
 
       group/dachverband_externe:
         one: Externals
@@ -139,7 +139,7 @@ en:
 
     attributes:
       person:
-        place_of_origin: Hometown incl. Canton
+        place_of_origin: Place of origin incl. Canton
         language_skills:
           native: First language
           good: Good knowledge
