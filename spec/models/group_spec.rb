@@ -43,7 +43,7 @@ describe Group do
       expect(Group.where(type: group.type)).to be_one
 
       with_locale(:en) do
-        expect(group.name).to be == 'The Foundation for Young Swiss Abroad'
+        expect(group.name).to be == 'Foundation for Young Swiss Abroad'
       end
     end
 
@@ -62,8 +62,8 @@ describe Group do
       expect(Group.where(type: group.type)).to be_one
 
       with_locale(:en) do
-        expect(I18n.t('activerecord.models.group/dachverband.name')).to be == 'The Foundation for Young Swiss Abroad'
-        expect(group.name).to be == 'The Foundation for Young Swiss Abroad'
+        expect(I18n.t('activerecord.models.group/dachverband.name')).to be == 'Foundation for Young Swiss Abroad'
+        expect(group.name).to be == 'Foundation for Young Swiss Abroad'
         expect(group.name).to be == I18n.t('activerecord.models.group/dachverband.name')
       end
     end
