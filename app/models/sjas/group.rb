@@ -13,6 +13,7 @@ module Sjas::Group
   ::Group.root_types(::Group::Dachverband)
 
   def name
+    return super if I18n.locale == :de
     return super unless one_of_a_kind?
 
     i18n_key = "activerecord.models.#{self.class.name.underscore}"

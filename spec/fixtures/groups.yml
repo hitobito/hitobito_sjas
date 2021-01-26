@@ -31,7 +31,7 @@ teilnehmerpool:
   layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
   lft: 24
   rgt: 25
-  name: Teilnehmerpool
+  name: Teilnehmende
   type: Group::DachverbandTeilnehmerpool
 stiftungsrat:
   parent: root

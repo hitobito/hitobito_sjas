@@ -29,6 +29,14 @@ describe Group do
   end
 
   context 'name' do
+    it 'is not translated for german locale' do
+      group = groups(:teilnehmerpool)
+
+      with_locale(:de) do
+        expect(group.name).to be == 'Teilnehmende'
+      end
+    end
+
     it 'is replaced by translated type-name if unique' do
       group = groups(:root)
 
