@@ -4,5 +4,21 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 it:
+  contactable:
+    phone_number_fields:
+      note: Inserire il prefisso internazionale.
+
+  event:
+    application_market:
+      popover_waiting_list:
+        waiting_list_info: Aggiungi questa persona alla lista d'attesa.
+
+  events:
+    global:
+      link:
+        add_event/camp: Crea colonia
+    new:
+      title_event/camp: Crea colonia
+
   navigation:
-    camps: Colonie
+    camps: Colonie di vacanza

@@ -4,5 +4,21 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 en:
+  contactable:
+    phone_number_fields:
+      note: Please register the international prefix.
+
+  event:
+    application_market:
+      popover_waiting_list:
+        waiting_list_info: Put this person on the waiting-list
+
+  events:
+    global:
+      link:
+        add_event/camp: Create camp
+    new:
+      title_event/camp: Create camp
+
   navigation:
     camps: Camps

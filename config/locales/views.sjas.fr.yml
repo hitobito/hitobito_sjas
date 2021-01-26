@@ -4,5 +4,21 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 fr:
+  contactable:
+    phone_number_fields:
+      note: Enregistrer l'indicatif international s.v.p.
+
+  event:
+    application_market:
+      popover_waiting_list:
+        waiting_list_info: Mets cette personne sur la liste d'attente.
+
+  events:
+    global:
+      link:
+        add_event/camp: Edifier un camp
+    new:
+      title_event/camp: Edifier un camp
+
   navigation:
-    camps: "Camps"
+    camps: Camps de vacances

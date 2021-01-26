@@ -12,6 +12,7 @@ en:
 
       group/dachverband:
         one: FYSA
+        name: The Foundation for Young Swiss Abroad
 
       group/dachverband_geschaeftsstelle:
         one: Office
@@ -90,7 +91,7 @@ en:
 
       group/dachverband_teilnehmerpool/teilnehmer:
         one: Participants
-        description: Camp participants
+        description: Camp participant
 
       group/dachverband_stiftungsrat/praesident:
         one: President
@@ -138,7 +139,7 @@ en:
 
     attributes:
       person:
-        place_of_origin: Hometown/Canton
+        place_of_origin: Hometown incl. Canton
         language_skills:
           native: First language
           good: Good knowledge

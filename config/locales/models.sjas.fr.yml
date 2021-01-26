@@ -12,6 +12,7 @@ fr:
 
       group/dachverband:
         one: FESE
+        name: Fondation pour les enfants suisses à l'étranger
 
       group/dachverband_geschaeftsstelle:
         one: Bureau
@@ -90,7 +91,7 @@ fr:
 
       group/dachverband_teilnehmerpool/teilnehmer:
         one: Participants / Participantes
-        description: Participants de camp / Participantes de camp
+        description: Participant/e au camp de vacances
 
       group/dachverband_stiftungsrat/praesident:
         one: Président/e
@@ -133,12 +134,12 @@ fr:
       ### ROLES
 
       event/camp:
-        one: Camps
-        other: Camps
+        one: Camps de vacances
+        other: Camps de vacances
 
     attributes:
       person:
-        place_of_origin: Lieu d'origine/canton
+        place_of_origin: Lieu d'origine et canton
         language_skills:
           native: Langue maternelle
           good: Bonne connaissances

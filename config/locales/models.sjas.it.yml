@@ -12,6 +12,7 @@ it:
 
       group/dachverband:
         one: FGSE
+        name: Fondazione per i giovani svizzeri all'estero
 
       group/dachverband_geschaeftsstelle:
         one: Cancelleria
@@ -42,8 +43,8 @@ it:
         other: Comitati cantonali
 
       group/dachverband_externe:
-        one: ''
-        other: ''
+        one: Altri
+        other: Altri
 
       ### ROLES
 
@@ -56,11 +57,11 @@ it:
         description:
 
       group/dachverband_geschaeftsstelle/projektleitung:
-        one: Gestione progetti
+        one: Responsabile di progetti
         description:
 
       group/dachverband_geschaeftsstelle/sachbearbeitung:
-        one: Elaborazione incarichi
+        one: Segreteria
         description:
 
       group/dachverband_geschaeftsstelle/geschaeftsfuehrung:
@@ -84,8 +85,8 @@ it:
         description:
 
       group/dachverband_leitungspool/zivildienstleistender:
-        one: ''
-        other: ''
+        one: Civilisti
+        other: Civilisti
         description:
 
       group/dachverband_teilnehmerpool/teilnehmer:
@@ -133,12 +134,12 @@ it:
       ### ROLES
 
       event/camp:
-        one: Colonie
-        other: Colonie
+        one: Colonie di vacanza
+        other: Colonie di vacanza
 
     attributes:
       person:
-        place_of_origin: ""
+        place_of_origin: Luogo di origine incl. cantone di origine
         language_skills:
           native: Madrelingua
           good: Buone conoscenze
@@ -152,4 +153,4 @@ it:
         other_native_language: Altra madrelingua
 
       event/camp:
-        description: ""
+        description: Categoria d'età
