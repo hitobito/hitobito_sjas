@@ -14,8 +14,8 @@ en:
         waiting_list_info: Put this person on the waiting-list
     participations:
       print:
-        heading_event/camp: Registration for camp
-        requirements_for_event_camp: Requirements for the camp
+        heading_event/camp: Camp registration
+        requirements_for_event_camp: "Camp conditions "
         read_and_agreed_for_event_camp: "I meet the requirements for the camp, have read the camp description and agree to them."
 
   events:

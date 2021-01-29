@@ -139,7 +139,7 @@ en:
 
     attributes:
       person:
-        place_of_origin: Place of origin incl. Canton
+        place_of_origin: Place of origin incl. canton
         language_skills:
           native: First language
           good: Good knowledge

@@ -12,6 +12,11 @@ it:
     application_market:
       popover_waiting_list:
         waiting_list_info: Aggiungi questa persona alla lista d'attesa.
+    participations:
+      print:
+        heading_event/camp: Iscrizione alla colonia di vacanza
+        requirements_for_event_camp: Condizioni di partecipazione alla colonia di vacanza
+        read_and_agreed_for_event_camp: ""
 
   events:
     global:
@@ -21,4 +26,4 @@ it:
       title_event/camp: Crea colonia
 
   navigation:
-    camps: Colonie di vacanza
+    camps: Colonia di vacanza

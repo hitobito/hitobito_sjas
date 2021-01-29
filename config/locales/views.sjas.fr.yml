@@ -12,6 +12,11 @@ fr:
     application_market:
       popover_waiting_list:
         waiting_list_info: Mets cette personne sur la liste d'attente.
+    participations:
+      print:
+        heading_event/camp: Inscription au camp
+        requirements_for_event_camp: Conditions pour la participation au camp
+        read_and_agreed_for_event_camp: ""
 
   events:
     global:
