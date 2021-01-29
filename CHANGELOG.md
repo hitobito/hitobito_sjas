@@ -1,3 +1,3 @@
 # Hitobito SJAS Changelog
 
-## unreleased
+## Version 1.22
