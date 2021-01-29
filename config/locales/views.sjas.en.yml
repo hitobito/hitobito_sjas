@@ -15,7 +15,7 @@ en:
     participations:
       print:
         heading_event/camp: Camp registration
-        requirements_for_event_camp: "Camp conditions"
+        requirements_for_event_camp: Camp conditions
         read_and_agreed_for_event_camp: "I meet the requirements for the camp, have read the camp description and agree to them."
 
   event/participations:
