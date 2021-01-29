@@ -15,8 +15,12 @@ en:
     participations:
       print:
         heading_event/camp: Camp registration
-        requirements_for_event_camp: "Camp conditions "
+        requirements_for_event_camp: "Camp conditions"
         read_and_agreed_for_event_camp: "I meet the requirements for the camp, have read the camp description and agree to them."
+
+  event/participations:
+    full_entry_label: "The participation of <i>%{person}</i> in <i>%{event}</i>"
+    success: "%{full_entry_label} has been recorded successfully. You will shortly receive an email with your registered contact details."
 
   events:
     global:

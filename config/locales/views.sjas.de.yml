@@ -18,6 +18,10 @@ de:
         requirements_for_event_camp: Voraussetzungen für das Ferienlager
         read_and_agreed_for_event_camp: Ich erfülle die Voraussetzungen für das Ferienlager, habe die Ferienlagerbeschreibung gelesen und bin damit einverstanden.
 
+  event/participations:
+    full_entry_label: "Die Teilnahme von <i>%{person}</i> in <i>%{event}</i>"
+    success: "%{full_entry_label} wurde erfolgreich erfasst. Du erhältst in Kürze eine E-Mail mit deinen eingetragenen Kontaktangaben."
+
   events:
     global:
       link:

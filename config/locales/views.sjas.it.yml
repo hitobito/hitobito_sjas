@@ -18,6 +18,10 @@ it:
         requirements_for_event_camp: Condizioni di partecipazione alla colonia di vacanza
         read_and_agreed_for_event_camp: ""
 
+  event/participations:
+    full_entry_label: "La partecipazione di <i>%{person}</i> al <i>%{event}</i>"
+    success: "%{full_entry_label} è stata registrata correttamente. A breve riceverà un’email con i dati di contatto inseriti."
+
   events:
     global:
       link:

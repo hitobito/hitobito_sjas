@@ -18,6 +18,10 @@ fr:
         requirements_for_event_camp: Conditions pour la participation au camp
         read_and_agreed_for_event_camp: ""
 
+  event/participations:
+    full_entry_label: "La participation de <i>%{person}</i> au camp <i>%{event}</i>"
+    success: "%{full_entry_label} a bien été saisie. Tu vas recevoir un courriel récapitulant les coordonnées qui ont été indiquées."
+
   events:
     global:
       link:
