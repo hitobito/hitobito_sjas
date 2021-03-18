@@ -52,6 +52,8 @@ devs.each do |name, email|
   seeder.seed_developer(name, email, root, Group::Dachverband::Admin)
 end
 
+seeder.assign_role_to_root(root, Group::Dachverband::Admin)
+
 geschaeftsstelle = Group::DachverbandGeschaeftsstelle.first
 [
   seeder.seed_developer('Loïc Roth', 'roth@sjas.ch', geschaeftsstelle,
