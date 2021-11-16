@@ -13,9 +13,9 @@ describe Group do
   include_examples 'group types'
 
   context Event::Course do
-    it 'is not enabled for any group type' do
+    it 'is enabled for root group type' do
       course_groups = Group.all_types.select { |g| g.event_types.include?(Event::Course) }
-      expect(course_groups).to eq([])
+      expect(course_groups).to match_array [Group::Dachverband]
     end
   end
 
