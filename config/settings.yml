@@ -3,20 +3,18 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
 # Settings relevant for the hitobito_sjas wagon
 # Overrides settings from the main application
 application:
   logo:
     image: logo.svg
-    height: 100
-    width: 241
+    height: 90
+    width: 90
   languages:
     de: Deutsch
     en: English
     fr: Français
     it: Italiano
-
 
 # The person with this email has root access to everything
 # This person should only be used by the operators of the application,
