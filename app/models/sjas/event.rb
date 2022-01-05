@@ -10,16 +10,22 @@ module Sjas
     extend ActiveSupport::Concern
 
     included do
-      self.role_types = [
-        ::Event::Role::Leader,
-        ::Event::Role::AssistantLeader,
-        ::Event::Role::Cook,
-        # ::Event::Role::Helper,
-        # ::Event::Role::Treasurer,
-        # ::Event::Role::Speaker,
-        ::Event::Role::Participant
-      ]
-    end
+      [
+        ::Event::Role::Helper,
+        ::Event::Role::Treasurer,
+        ::Event::Role::Speaker
+      ].each do |type|
+        disable_role_type(type)
+      end
 
+      [
+        ::Event::Role::AssistantLeaderZivildienst,
+        ::Event::Role::CookZivildienst,
+        ::Event::Role::LeaderZivildienst,
+        ::Event::Role::ParticipantZivildienst
+      ].each do |type|
+        register_role_type(type)
+      end
+    end
   end
 end
