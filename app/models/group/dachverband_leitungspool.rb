@@ -5,13 +5,12 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
 # Leitungspool
-#     Lagerleiter\*innen[]
-#     Kursleiter\*innen[]
-#     Mitleiter\*innen[]
-#     Koch\*in []
-#     Zivildienstleistende[]
+#     Hauptlagerleiter*in: []
+#     Kursleiter*in: []
+#     Leiter*in: []
+#     Koch*Köchin: []
+#     Zivildienstleistender: []
 class Group::DachverbandLeitungspool < ::Group
   class Lagerleitung < ::Role::Leitung
   end

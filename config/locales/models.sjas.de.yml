@@ -69,19 +69,19 @@ de:
         description:
 
       group/dachverband_leitungspool/lagerleitung:
-        one: Lagerleiter*innen
+        one: Hauptlagerleiter*in
         description:
 
       group/dachverband_leitungspool/kursleitung:
-        one: Kursleiter*innen
+        one: Kursleiter*in
         description:
 
       group/dachverband_leitungspool/mitleitung:
-        one: Mitleiter*innen
+        one: Leiter*in
         description:
 
       group/dachverband_leitungspool/koch:
-        one: Köch*in
+        one: Koch*Köchin
         description:
 
       group/dachverband_leitungspool/zivildienstleistender:
@@ -90,8 +90,8 @@ de:
         description:
 
       group/dachverband_teilnehmerpool/teilnehmer:
-        one: Teilnehmende
-        description: Teilnehmer an Ferienlagern
+        one: Teilnehmer*in
+        description: Teilnehmer*innen an Ferienlagern
 
       group/dachverband_stiftungsrat/praesident:
         one: Präsident*in
@@ -136,6 +136,31 @@ de:
       event/camp:
         one: Ferienlager
         other: Ferienlager
+
+      event/role/leader:
+        one: Hauptleiter*in
+        other: Hauptleiter*innen
+      event/role/assistant_leader:
+        one: Leiter*in
+        other: Leiter*innen
+      event/role/cook:
+        one: Koch*Köchin
+        other: Köch*innen
+      event/role/participant:
+        one: Teilnehmer*in
+        other: Teilnehmer*innen
+      event/role/leader_zivildienst:
+        one: Hauptleiter*in Zivi
+        other: Hauptleiter*innen Zivi
+      event/role/assistant_leader_zivildienst:
+        one: Leiter*in Zivi
+        other: Leiter*innen Zivi
+      event/role/cook_zivildienst:
+        one: Koch*Köchin Zivi
+        other: Köch*innen Zivi
+      event/role/participant_zivildienst:
+        one: Teilnehmer*in Zivi
+        other: Teilnehmer*innen Zivi
 
     attributes:
       person:

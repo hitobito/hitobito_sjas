@@ -15,10 +15,10 @@ This hitobito wagon defines the organization hierarchy with groups and roles.
     * Sachbearbeitung: [:layer_and_below_full, :finance]
     * Geschäftsführung: [:layer_and_below_full, :finance]
   * Leitungspool
-    * Lagerleiter*innen: []
-    * Kursleiter*innen: []
-    * Mitleiter*innen: []
-    * Köch*in: []
+    * Hauptlagerleiter*in: []
+    * Kursleiter*in: []
+    * Leiter*in: []
+    * Koch*Köchin: []
     * Zivildienstleistender: []
   * Teilnehmerpool
     * Teilnehmende: []
