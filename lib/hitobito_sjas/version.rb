@@ -7,5 +7,5 @@
 
 
 module HitobitoSjas
-  VERSION = '1.22.19'
+  VERSION = '1.26.52'
 end
