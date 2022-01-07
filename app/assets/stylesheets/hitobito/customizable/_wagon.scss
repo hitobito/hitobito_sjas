@@ -17,8 +17,7 @@ a.btn,
 .btn,
 .nav-left-list a,
 #page-header a,
-.nav-sub a,
-{
+.nav-sub a {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: -0.03em;
@@ -34,7 +33,8 @@ a.btn,
 
 // Active navigation element
 .nav-left {
-  a.is-active, li.is-active > a {
+  a.is-active,
+  li.is-active > a {
     text-decoration: none;
     background-color: $sjasRed;
     color: $sjasWhite;
@@ -61,4 +61,16 @@ a.btn,
 
 .form-striped fieldset:nth-of-type(2n) {
   background-color: $tableBackgroundAccent;
+}
+
+#page-header {
+  & > a {
+    color: $sjasGray3;
+  }
+
+  .is-logged-out & {
+    a {
+      color: $sjasGray3;
+    }
+  }
 }
