@@ -20,4 +20,6 @@ Gem::Specification.new do |s|
   s.test_files = Dir['test/**/*']
 
   s.required_ruby_version = '>= 2.5.5'
+
+  s.add_dependency 'hitobito_youth'
 end
