@@ -10,4 +10,8 @@ class Event::Camp < Event
   self.used_attributes -= [:motto]
 
   self.supports_applications = true
+
+  def tentative_application_possible?
+    false
+  end
 end
