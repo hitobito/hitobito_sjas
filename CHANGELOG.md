@@ -1,3 +1,5 @@
 # Hitobito SJAS Changelog
 
-## Version 1.22
+## unreleased
+
+- Youth wagon eingebunden (#71)
