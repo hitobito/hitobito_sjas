@@ -69,19 +69,19 @@ it:
         description:
 
       group/dachverband_leitungspool/lagerleitung:
-        one: Monitori/trici
+        one: ""
         description:
 
       group/dachverband_leitungspool/kursleitung:
-        one: Istruttori/trici
+        one: ""
         description:
 
       group/dachverband_leitungspool/mitleitung:
-        one: Codirettori/trici
+        one: ""
         description:
 
       group/dachverband_leitungspool/koch:
-        one: Cuoco/a
+        one: ""
         description:
 
       group/dachverband_leitungspool/zivildienstleistender:
@@ -90,8 +90,8 @@ it:
         description:
 
       group/dachverband_teilnehmerpool/teilnehmer:
-        one: Partecipanti
-        description: Partecipanti alle colonie
+        one: ""
+        description: ""
 
       group/dachverband_stiftungsrat/praesident:
         one: Presidente
@@ -136,6 +136,31 @@ it:
       event/camp:
         one: Colonie di vacanza
         other: Colonie di vacanza
+
+      event/role/leader:
+        one: ''
+        other: ''
+      event/role/assistant_leader:
+        one: ''
+        other: ''
+      event/role/cook:
+        one: ''
+        other: ''
+      event/role/participant:
+        one: ''
+        other: ''
+      event/role/leader_zivildienst:
+        one: ''
+        other: ''
+      event/role/assistant_leader_zivildienst:
+        one: ''
+        other: ''
+      event/role/cook_zivildienst:
+        one: ''
+        other: ''
+      event/role/participant_zivildienst:
+        one: ''
+        other: ''
 
     attributes:
       person:

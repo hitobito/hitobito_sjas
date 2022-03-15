@@ -69,19 +69,19 @@ fr:
         description:
 
       group/dachverband_leitungspool/lagerleitung:
-        one: Chef de camp
+        one: ""
         description:
 
       group/dachverband_leitungspool/kursleitung:
-        one: Chef de formation
+        one: ""
         description:
 
       group/dachverband_leitungspool/mitleitung:
-        one: Moniteur / Monitrice
+        one: ""
         description:
 
       group/dachverband_leitungspool/koch:
-        one: Cuisinier / Cuisinière
+        one: ""
         description:
 
       group/dachverband_leitungspool/zivildienstleistender:
@@ -90,8 +90,8 @@ fr:
         description:
 
       group/dachverband_teilnehmerpool/teilnehmer:
-        one: Participants / Participantes
-        description: Participant/e au camp de vacances
+        one: ""
+        description: ""
 
       group/dachverband_stiftungsrat/praesident:
         one: Président/e
@@ -136,6 +136,31 @@ fr:
       event/camp:
         one: Camps de vacances
         other: Camps de vacances
+
+      event/role/leader:
+        one: ''
+        other: ''
+      event/role/assistant_leader:
+        one: ''
+        other: ''
+      event/role/cook:
+        one: ''
+        other: ''
+      event/role/participant:
+        one: ''
+        other: ''
+      event/role/leader_zivildienst:
+        one: ''
+        other: ''
+      event/role/assistant_leader_zivildienst:
+        one: ''
+        other: ''
+      event/role/cook_zivildienst:
+        one: ''
+        other: ''
+      event/role/participant_zivildienst:
+        one: ''
+        other: ''
 
     attributes:
       person:
