@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2012-2021, Stiftung für junge Auslandschweizer. This file is part of
+#  Copyright (c) 2012-2022, Stiftung für junge Auslandschweizer. This file is part of
 #  hitobito_sjas and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
@@ -34,6 +34,7 @@ module HitobitoSjas
       GroupAbility.include Sjas::GroupAbility
       EventAbility.abilities[Event::Camp] =
         EventAbility.abilities[Event] # Camp has same abilities as event
+      EventAbility.include Sjas::EventAbility
 
       # Decorators
       EventDecorator.icons['Event::Camp'] = :campground
