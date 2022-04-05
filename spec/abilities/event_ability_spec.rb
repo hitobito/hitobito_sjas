@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2012-2020, Stiftung für junge Auslandschweizer. This file is part of
+#  Copyright (c) 2012-2022, Stiftung für junge Auslandschweizer. This file is part of
 #  hitobito_sjas and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
@@ -33,8 +33,13 @@ describe EventAbility do
         end
 
         it 'may index participants for camp' do
-          camp = Fabricate(:event, groups: [group])
+          camp = Fabricate(:camp, groups: [group])
           is_expected.to be_able_to(:index_participations, camp)
+        end
+
+        it 'may list tentative applications for camp' do
+          camp = Fabricate(:camp, groups: [group])
+          is_expected.to be_able_to(:list_tentatives, camp)
         end
       end
     end
@@ -59,8 +64,13 @@ describe EventAbility do
         end
 
         it 'may not index participants for camp' do
-          camp = Fabricate(:event, groups: [group])
+          camp = Fabricate(:camp, groups: [group])
           is_expected.not_to be_able_to(:index_participations, camp)
+        end
+
+        it 'may not list tentative applications for camp' do
+          camp = Fabricate(:camp, groups: [group])
+          is_expected.not_to be_able_to(:list_tentatives, camp)
         end
       end
     end
@@ -85,8 +95,13 @@ describe EventAbility do
         end
 
         it 'may not index participants for camp' do
-          camp = Fabricate(:event, groups: [group])
+          camp = Fabricate(:camp, groups: [group])
           is_expected.not_to be_able_to(:index_participations, camp)
+        end
+
+        it 'may not list tentative applications for camp' do
+          camp = Fabricate(:camp, groups: [group])
+          is_expected.not_to be_able_to(:list_tentatives, camp)
         end
       end
     end
