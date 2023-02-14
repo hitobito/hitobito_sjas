@@ -1,15 +1,15 @@
 [main]
 host = https://www.transifex.com
-type = YML
 
-[hitobito_sjas.models-sjas-de-yml]
-file_filter = config/locales/models.sjas.<lang>.yml
+[o:hitobito:p:hitobito_sjas:r:models-sjas-de-yml]
+file_filter  = config/locales/models.sjas.<lang>.yml
+source_file  = config/locales/models.sjas.de.yml
+source_lang  = de
 minimum_perc = 0
-source_file = config/locales/models.sjas.de.yml
-source_lang = de
 
-[hitobito_sjas.views-sjas-de-yml]
-file_filter = config/locales/views.sjas.<lang>.yml
+[o:hitobito:p:hitobito_sjas:r:views-sjas-de-yml]
+file_filter  = config/locales/views.sjas.<lang>.yml
+source_file  = config/locales/views.sjas.de.yml
+source_lang  = de
 minimum_perc = 0
-source_file = config/locales/views.sjas.de.yml
-source_lang = de
+
