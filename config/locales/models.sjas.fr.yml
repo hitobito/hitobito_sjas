@@ -16,34 +16,42 @@ fr:
 
       group/dachverband_geschaeftsstelle:
         one: Bureau
+        many: Bureau
         other: Bureau
 
       group/dachverband_leitungspool:
         one: Moniteur/Monitrice
+        many: Moniteur/Monitrice
         other: Moniteur/Monitrice
 
       group/dachverband_teilnehmerpool:
         one: Participants/ Participantes
+        many: Participants/ Participantes
         other: Participants/ Participantes
 
       group/dachverband_stiftungsrat:
         one: Conseil de Fondation
+        many: Conseil de Fondation
         other: Conseil de Fondation
 
       group/dachverband_stiftung:
         one: Fondations
+        many: Fondations
         other: Fondations
 
       group/dachverband_partner:
         one: Partenaire
+        many: Partenaires
         other: Partenaires
 
       group/kantonalkomitee:
         one: Comités cantonaux
+        many: Comités cantonaux
         other: Comités cantonaux
 
       group/dachverband_externe:
         one: Externe
+        many: Externe
         other: Externe
 
       ### ROLES
@@ -86,6 +94,7 @@ fr:
 
       group/dachverband_leitungspool/zivildienstleistender:
         one: Civilistes
+        many: Civilistes
         other: Civilistes
         description:
 
@@ -135,31 +144,40 @@ fr:
 
       event/camp:
         one: Camps de vacances
+        many: Camps de vacances
         other: Camps de vacances
 
       event/role/leader:
         one: ''
+        many: ''
         other: ''
       event/role/assistant_leader:
         one: ''
+        many: ''
         other: ''
       event/role/cook:
         one: ''
+        many: ''
         other: ''
       event/role/participant:
         one: ''
+        many: ''
         other: ''
       event/role/leader_zivildienst:
         one: ''
+        many: ''
         other: ''
       event/role/assistant_leader_zivildienst:
         one: ''
+        many: ''
         other: ''
       event/role/cook_zivildienst:
         one: ''
+        many: ''
         other: ''
       event/role/participant_zivildienst:
         one: ''
+        many: ''
         other: ''
 
     attributes:

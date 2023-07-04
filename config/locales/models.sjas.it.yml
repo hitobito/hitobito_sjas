@@ -16,34 +16,42 @@ it:
 
       group/dachverband_geschaeftsstelle:
         one: Cancelleria
+        many: Segreterie
         other: Segreterie
 
       group/dachverband_leitungspool:
         one: Insegnante
+        many: Pool direttivi
         other: Pool direttivi
 
       group/dachverband_teilnehmerpool:
         one: Partecipante
+        many: Pool di partecipanti
         other: Pool di partecipanti
 
       group/dachverband_stiftungsrat:
         one: Consiglio di fondazione
+        many: Consigli di fondazione
         other: Consigli di fondazione
 
       group/dachverband_stiftung:
         one: Fondazioni
+        many: Fondazioni
         other: Fondazioni
 
       group/dachverband_partner:
         one: Partner
+        many: Partner
         other: Partner
 
       group/kantonalkomitee:
         one: Comitato cantonale
+        many: Comitati cantonali
         other: Comitati cantonali
 
       group/dachverband_externe:
         one: Altri
+        many: Altri
         other: Altri
 
       ### ROLES
@@ -86,6 +94,7 @@ it:
 
       group/dachverband_leitungspool/zivildienstleistender:
         one: Civilisti
+        many: Civilisti
         other: Civilisti
         description:
 
@@ -135,31 +144,40 @@ it:
 
       event/camp:
         one: Colonie di vacanza
+        many: Colonie di vacanza
         other: Colonie di vacanza
 
       event/role/leader:
         one: ''
+        many: ''
         other: ''
       event/role/assistant_leader:
         one: ''
+        many: ''
         other: ''
       event/role/cook:
         one: ''
+        many: ''
         other: ''
       event/role/participant:
         one: ''
+        many: ''
         other: ''
       event/role/leader_zivildienst:
         one: ''
+        many: ''
         other: ''
       event/role/assistant_leader_zivildienst:
         one: ''
+        many: ''
         other: ''
       event/role/cook_zivildienst:
         one: ''
+        many: ''
         other: ''
       event/role/participant_zivildienst:
         one: ''
+        many: ''
         other: ''
 
     attributes:
