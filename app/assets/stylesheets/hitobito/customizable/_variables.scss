@@ -5,18 +5,18 @@
 
 // Brand
 // -------------------------
-$sjasRed: #ff3f59; // Primary brand color
+$sjas-red: #ff3f59; // Primary brand color
 
-$sjasWhite: #ffffff; // Website background
-$sjasGray1: #e9e9e9; // Website button background
-$sjasGray2: #d0d0d0; // Website button hover
-$sjasGray3: #39332a; // Website font color
+$sjas-white: #ffffff; // Website background
+$sjas-gray-1: #e9e9e9; // Website button background
+$sjas-gray-2: #d0d0d0; // Website button hover
+$sjas-gray-3: #39332a; // Website font color
 
-$sjasBlue1: #d5e0ed;
-$sjasBlue2: #9bb6eb; // Secondary blue in annual report
-$sjasBlue3: #819cba;
-$sjasBlue4: #2847d1; // Primary blue in annual report
-$sjasBlue5: #081627;
+$sjas-blue-1: #d5e0ed;
+$sjas-blue-2: #9bb6eb; // Secondary blue in annual report
+$sjas-blue-3: #819cba;
+$sjas-blue-4: #2847d1; // Primary blue in annual report
+$sjas-blue-5: #081627;
 
 /* Bootstrap variable definition here */
 
@@ -25,87 +25,87 @@ $sjasBlue5: #081627;
 
 // Grays
 // -------------------------
-$black: $sjasGray3;
-$grayDark: darken($sjasBlue3, 20%);
-$grayDark: darken($sjasBlue3, 10%);
-$gray: $sjasBlue3;
-$grayLight: $sjasBlue2;
-$grayLighter: $sjasBlue1;
-$white: $sjasWhite;
+$black: $sjas-gray-3;
+$gray-dark: darken($sjas-blue-3, 20%);
+$gray-dark: darken($sjas-blue-3, 10%);
+$gray: $sjas-blue-3;
+$gray-light: $sjas-blue-2;
+$gray-lighter: $sjas-blue-1;
+$white: $sjas-white;
 
 // Colors
 // ----------------------------
-$blue: $sjasRed;
-$blueDark: darken($blue, 10%);
+$blue: $sjas-red;
+$blue-dark: darken($blue, 10%);
 $green: #8db850;
-$greenDark: darken($green, 10%);
+$green-dark: darken($green, 10%);
 
 $orange: #dc795b;
-$orangeDark: #c75b3b;
-$purple: $sjasBlue3;
-$purpleDark: darken($sjasBlue3, 10%);
+$orange-dark: #c75b3b;
+$purple: $sjas-blue-3;
+$purple-dark: darken($sjas-blue-3, 10%);
 
-$red: $sjasRed;
+$red: $sjas-red;
 
-$textColor: $black;
-$borderColor: $sjasGray1;
+$text-color: $black;
+$border-color: $sjas-gray-1;
 
-$pageBackground: $sjasWhite;
-$contentBackground: $sjasBlue1;
-$footerBackground: $sjasGray1;
-$bodyBackground: $sjasGray1;
+$page-background: $sjas-white;
+$content-background: $sjas-blue-1;
+$footer-background: $sjas-gray-1;
+$body-background: $sjas-gray-1;
 
-$focusColor: $purple;
-$shadowColor: darken($pageBackground, 10%);
-$linkColor: $textColor;
-$linkColorHover: $sjasRed;
+$focus-color: $purple;
+$shadow-color: darken($page-background, 10%);
+$link-color: $text-color;
+$link-color-hover: $sjas-red;
 
-$footerColor: $textColor;
-$footerColorHover: $textColor;
+$footer-color: $text-color;
+$footer-color-hover: $text-color;
 
-$tableColorHover: lighten($purple, 50%);
-$tableBackgroundAccent: lighten($sjasBlue1, 9%);
+$table-color-hover: lighten($purple, 50%);
+$table-background-accent: lighten($sjas-blue-1, 9%);
 
 // Typography
 // -------------------------
 
-$sansFontFamily: Helvetica, Arial, sans-serif;
-$headingFontFamily: Helvetica, Arial, sans-serif;
-$baseFontFamily: Helvetica, Arial, sans-serif;
-$headingsFontWeight: normal; // instead of browser default, bold
+$sans-font-family: Helvetica, Arial, sans-serif;
+$heading-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: Helvetica, Arial, sans-serif;
+$headings-font-weight: normal; // instead of browser default, bold
 
 // Decoration
 // -------------------------
-$borderRadius: 6px;
+$border-radius: 6px;
 
 // Rhythm
 // -------------------------
-$vSpace: 24px;
+$v-space: 24px;
 
 // FLUID GRID
 // --------------------------------------------------
 
 // Default
 // -------------------------
-$fluidGridColumnWidth: 6.382978723%;
-$fluidGridGutterWidth: 2.127659574%;
+$fluid-grid-column-width: 6.382978723%;
+$fluid-grid-gutter-width: 2.127659574%;
 
 // Portrait tablet to default desktop
 // -------------------------
-$fluidGridColumnWidthTablet: 5.801104972%;
-$fluidGridGutterWidthTablet: 2.762430939%;
+$fluid-grid-column-width-tablet: 5.801104972%;
+$fluid-grid-gutter-width-tablet: 2.762430939%;
 
 // Large desktop and up
 // -------------------------
-$fluidGridColumnWidthLarge: 5.982905983%;
-$fluidGridGutterWidthLarge: 2.564102564%;
+$fluid-grid-column-width-large: 5.982905983%;
+$fluid-grid-gutter-width-large: 2.564102564%;
 
 // RESPONSIVE DESIGN
 // --------------------------------------------------
 
 // Media widths
 // -------------------------
-$mediaPhone: 480px;
-$mediaTablet: 768px;
-$mediaDesktop: 980px;
-$mediaLarge: 1200px; // and upper
+$media-phone: 480px;
+$media-tablet: 768px;
+$media-desktop: 980px;
+$media-large: 1200px; // and upper
