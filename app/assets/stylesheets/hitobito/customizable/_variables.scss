@@ -3,6 +3,9 @@
 //  or later. See the COPYING file at the top-level directory or at
 //  https://github.com/hitobito/hitobito_sjas.
 
+// Suppress the vast amount of color contrast warnings for now
+$min-contrast-ratio: 1;
+
 // Brand
 // -------------------------
 $sjas-red: #ff3f59; // Primary brand color
@@ -27,7 +30,7 @@ $sjas-blue-5: #081627;
 // -------------------------
 $black: $sjas-gray-3;
 $gray-dark: darken($sjas-blue-3, 20%);
-$gray-dark: darken($sjas-blue-3, 10%);
+$gray-darker: darken($sjas-blue-3, 10%);
 $gray: $sjas-blue-3;
 $gray-light: $sjas-blue-2;
 $gray-lighter: $sjas-blue-1;

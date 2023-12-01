@@ -8,5 +8,5 @@
 %div.col-2.inline.row
   = f.collection_select(:translated_label, PhoneNumber.available_labels, :to_s, :to_s, {}, class: 'form-select form-select-sm h-100')
 = render 'contactable/public_check_box', f: f
-%p.col-6.ms-2
+%p.col-6.inline.ms-2
   = t('.note')
