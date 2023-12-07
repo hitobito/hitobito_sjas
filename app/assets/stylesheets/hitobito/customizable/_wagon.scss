@@ -36,12 +36,12 @@ a.btn,
   a.is-active,
   li.is-active > a {
     text-decoration: none;
-    background-color: $sjasRed;
-    color: $sjasWhite;
-    border-color: $sjasBlue4;
+    background-color: $sjas-red;
+    color: $sjas-white;
+    border-color: $sjas-blue-4;
 
     &:hover {
-      color: lighten($sjasRed, 46%);
+      color: lighten($sjas-red, 46%);
     }
   }
 }
@@ -56,21 +56,21 @@ a.btn,
 }
 
 .nav-left .nav-left-section:first-child {
-  border-color: $sjasGray1;
+  border-color: $sjas-gray-1;
 }
 
 .form-striped fieldset:nth-of-type(2n) {
-  background-color: $tableBackgroundAccent;
+  background-color: $table-background-accent;
 }
 
 #page-header {
   & > a {
-    color: $sjasGray3;
+    color: $sjas-gray-3;
   }
 
   .is-logged-out & {
     a {
-      color: $sjasGray3;
+      color: $sjas-gray-3;
     }
   }
 }
