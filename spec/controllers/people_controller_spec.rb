@@ -38,7 +38,7 @@ describe PeopleController do
 
       user.reload
 
-      expect(response).to have_http_status(302)
+      expect(response).to have_http_status(303)
       expect(user.first_name).to eq('updated_name')
     end
 
@@ -47,7 +47,7 @@ describe PeopleController do
 
       user.reload
 
-      expect(response).to have_http_status(302)
+      expect(response).to have_http_status(303)
       expect(user.place_of_origin).to eq('Trubschachen BE')
     end
 
@@ -56,7 +56,7 @@ describe PeopleController do
 
       user.reload
 
-      expect(response).to have_http_status(302)
+      expect(response).to have_http_status(303)
       expect(user.language_skill_de).to eq('native')
     end
 
@@ -65,7 +65,7 @@ describe PeopleController do
 
       user.reload
 
-      expect(response).to have_http_status(302)
+      expect(response).to have_http_status(303)
       expect(user.language_skill_fr).to eq('good')
     end
 
@@ -74,7 +74,7 @@ describe PeopleController do
 
       user.reload
 
-      expect(response).to have_http_status(302)
+      expect(response).to have_http_status(303)
       expect(user.language_skill_it).to eq('none')
     end
 
@@ -83,7 +83,7 @@ describe PeopleController do
 
       user.reload
 
-      expect(response).to have_http_status(302)
+      expect(response).to have_http_status(303)
       expect(user.language_skill_en).to eq('good')
     end
 
@@ -92,7 +92,7 @@ describe PeopleController do
 
       user.reload
 
-      expect(response).to have_http_status(302)
+      expect(response).to have_http_status(303)
       expect(user.language_skill_es).to eq('basic')
     end
 
@@ -101,7 +101,7 @@ describe PeopleController do
 
       user.reload
 
-      expect(response).to have_http_status(302)
+      expect(response).to have_http_status(303)
       expect(user.other_native_language).to eq('Klingonisch')
     end
   end
