@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2012-2021, Stiftung für junge Auslandschweizer. This file is part of
+#  Copyright (c) 2012-2024, Stiftung für junge Auslandschweizer. This file is part of
 #  hitobito_sjas and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
@@ -43,7 +43,7 @@ describe Group do
       expect(Group.where(type: group.type)).to be_one
 
       with_locale(:en) do
-        expect(group.name).to be == 'Foundation for Young Swiss Abroad'
+        expect(group.name).to be == 'Foundation for young Swiss Abroad'
       end
     end
 
@@ -62,8 +62,8 @@ describe Group do
       expect(Group.where(type: group.type)).to be_one
 
       with_locale(:en) do
-        expect(I18n.t('activerecord.models.group/dachverband.name')).to be == 'Foundation for Young Swiss Abroad'
-        expect(group.name).to be == 'Foundation for Young Swiss Abroad'
+        expect(I18n.t('activerecord.models.group/dachverband.name')).to be == 'Foundation for young Swiss Abroad'
+        expect(group.name).to be == 'Foundation for young Swiss Abroad'
         expect(group.name).to be == I18n.t('activerecord.models.group/dachverband.name')
       end
     end
