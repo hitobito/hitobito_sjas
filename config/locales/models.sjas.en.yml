@@ -12,7 +12,7 @@ en:
 
       group/dachverband:
         one: SJAS
-        name: Foundation for Young Swiss Abroad
+        name: Foundation for young Swiss Abroad
 
       group/dachverband_geschaeftsstelle:
         one: Office
@@ -36,7 +36,7 @@ en:
 
       group/dachverband_partner:
         one: Partner
-        other: Partner
+        other: Partners
 
       group/kantonalkomitee:
         one: Cantonal Committees
@@ -53,7 +53,7 @@ en:
         description:
 
       group/dachverband_geschaeftsstelle/adressverwalter:
-        one: Adressadministrator
+        one: Address administrator
         description:
 
       group/dachverband_geschaeftsstelle/projektleitung:
@@ -65,33 +65,33 @@ en:
         description:
 
       group/dachverband_geschaeftsstelle/geschaeftsfuehrung:
-        one: Office manager
+        one: Office directors
         description:
 
       group/dachverband_leitungspool/lagerleitung:
-        one: ""
+        one: Main camp leader
         description:
 
       group/dachverband_leitungspool/kursleitung:
-        one: ""
+        one: Course leader
         description:
 
       group/dachverband_leitungspool/mitleitung:
-        one: ""
+        one: Camp leader
         description:
 
       group/dachverband_leitungspool/koch:
-        one: ""
+        one: Cook
         description:
 
       group/dachverband_leitungspool/zivildienstleistender:
         one: Provider of community service
-        other: Provider of community service
+        other: Civil servants
         description:
 
       group/dachverband_teilnehmerpool/teilnehmer:
-        one: ""
-        description: ""
+        one: Participant
+        description: camp participants
 
       group/dachverband_stiftungsrat/praesident:
         one: President
@@ -120,13 +120,13 @@ en:
         one: Partner
 
       group/kantonalkomitee/adressverwalter:
-        one: Adressadministrator
+        one: Address administrator
 
       group/kantonalkomitee/kontakt:
         one: Contact
 
       group/dachverband_externe/adressverwalter:
-        one: Adressadministrator
+        one: Address administrator
 
       group/dachverband_externe/kontakt:
         one: Contact
@@ -138,29 +138,29 @@ en:
         other: Camps
 
       event/role/leader:
-        one: ''
-        other: ''
+        one: Main manager
+        other: Main Camp Leaders
       event/role/assistant_leader:
-        one: ''
-        other: ''
+        one: Camp leaders
+        other: Camp leaders
       event/role/cook:
-        one: ''
-        other: ''
+        one: Cooks
+        other: Cooks
       event/role/participant:
-        one: ''
-        other: ''
+        one: Participants
+        other: Participants
       event/role/leader_zivildienst:
-        one: ''
-        other: ''
+        one: civil servant main camp leader
+        other: Civil servant main camp leaders
       event/role/assistant_leader_zivildienst:
-        one: ''
-        other: ''
+        one: civil servant camp leader
+        other: Civil servant camp leaders
       event/role/cook_zivildienst:
-        one: ''
-        other: ''
+        one: Civil servant cook
+        other: Civil servant cooks
       event/role/participant_zivildienst:
-        one: ''
-        other: ''
+        one: Teilnehmer*innen Zivi
+        other: Teilnehmer*innen Zivi
 
     attributes:
       person:
