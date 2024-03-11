@@ -16,11 +16,11 @@ en:
 
       group/dachverband_geschaeftsstelle:
         one: Office
-        other: Office
+        other: Offices
 
       group/dachverband_leitungspool:
-        one: Camp leaders
-        other: Camp leaders
+        one: Camp leaders pool
+        other: Camp leaders pools
 
       group/dachverband_teilnehmerpool:
         one: Participants
@@ -28,10 +28,10 @@ en:
 
       group/dachverband_stiftungsrat:
         one: Foundation council
-        other: Foundation council
+        other: Foundation councils
 
       group/dachverband_stiftung:
-        one: Foundations
+        one: Foundation
         other: Foundations
 
       group/dachverband_partner:
@@ -39,7 +39,7 @@ en:
         other: Partners
 
       group/kantonalkomitee:
-        one: Cantonal Committees
+        one: Cantonal Committee
         other: Cantonal Committees
 
       group/dachverband_externe:
@@ -61,7 +61,7 @@ en:
         description:
 
       group/dachverband_geschaeftsstelle/sachbearbeitung:
-        one: Administrator
+        one: Administration
         description:
 
       group/dachverband_geschaeftsstelle/geschaeftsfuehrung:
@@ -85,13 +85,13 @@ en:
         description:
 
       group/dachverband_leitungspool/zivildienstleistender:
-        one: Provider of community service
+        one: Civil servant
         other: Civil servants
         description:
 
       group/dachverband_teilnehmerpool/teilnehmer:
         one: Participant
-        description: camp participants
+        description: Camp participants
 
       group/dachverband_stiftungsrat/praesident:
         one: President
@@ -134,26 +134,26 @@ en:
       ### ROLES
 
       event/camp:
-        one: Camps
+        one: Camp
         other: Camps
 
       event/role/leader:
-        one: Main manager
+        one: Main camp leader
         other: Main Camp Leaders
       event/role/assistant_leader:
-        one: Camp leaders
+        one: Camp leader
         other: Camp leaders
       event/role/cook:
-        one: Cooks
+        one: Cook
         other: Cooks
       event/role/participant:
-        one: Participants
+        one: Participant
         other: Participants
       event/role/leader_zivildienst:
-        one: civil servant main camp leader
+        one: Civil servant main camp leader
         other: Civil servant main camp leaders
       event/role/assistant_leader_zivildienst:
-        one: civil servant camp leader
+        one: Civil servant camp leader
         other: Civil servant camp leaders
       event/role/cook_zivildienst:
         one: Civil servant cook

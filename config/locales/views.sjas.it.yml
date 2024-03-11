@@ -16,7 +16,7 @@ it:
       print:
         heading_event/camp: Iscrizione alla colonia di vacanza
         requirements_for_event_camp: Condizioni di partecipazione alla colonia di vacanza
-        read_and_agreed_for_event_camp: ""
+        read_and_agreed_for_event_camp: "Io soddisfo i requisiti per il campo di vacanza, ho letto la descrizione del campo di vacanza e sono d'accordo."
 
   event/participations:
     full_entry_label: "La partecipazione di <i>%{person}</i> al <i>%{event}</i>"
@@ -25,9 +25,9 @@ it:
   events:
     global:
       link:
-        add_event/camp: Crea colonia
+        add_event/camp: Crea campo
     new:
-      title_event/camp: Crea colonia
+      title_event/camp: Crea campo
 
   navigation:
-    camps: Colonia di vacanza
+    camps: Campo di vacanza

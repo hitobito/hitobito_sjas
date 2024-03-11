@@ -11,18 +11,18 @@ it:
       ### GROUPS
 
       group/dachverband:
-        one: FGSE
+        one: SJAS
         name: Fondazione per i giovani svizzeri all'estero
 
       group/dachverband_geschaeftsstelle:
-        one: Cancelleria
+        one: Segreteria
         many: Segreterie
         other: Segreterie
 
       group/dachverband_leitungspool:
-        one: Insegnante
-        many: Pool direttivi
-        other: Pool direttivi
+        one: Pool di monitori
+        many: Pools di monitori
+        other: Pools di monitori
 
       group/dachverband_teilnehmerpool:
         one: Partecipante
@@ -35,7 +35,7 @@ it:
         other: Consigli di fondazione
 
       group/dachverband_stiftung:
-        one: Fondazioni
+        one: Fondazione
         many: Fondazioni
         other: Fondazioni
 
@@ -77,30 +77,30 @@ it:
         description:
 
       group/dachverband_leitungspool/lagerleitung:
-        one: ""
+        one: Capocampo
         description:
 
       group/dachverband_leitungspool/kursleitung:
-        one: ""
+        one: Monitore/rice di corso
         description:
 
       group/dachverband_leitungspool/mitleitung:
-        one: ""
+        one: Monitore/rice
         description:
 
       group/dachverband_leitungspool/koch:
-        one: ""
+        one: Cuoco/a
         description:
 
       group/dachverband_leitungspool/zivildienstleistender:
-        one: Civilisti
+        one: Persona di servizio civile
         many: Civilisti
         other: Civilisti
         description:
 
       group/dachverband_teilnehmerpool/teilnehmer:
-        one: ""
-        description: ""
+        one: Partecipante
+        description: Partecipanti di campi
 
       group/dachverband_stiftungsrat/praesident:
         one: Presidente
@@ -143,42 +143,42 @@ it:
       ### ROLES
 
       event/camp:
-        one: Colonie di vacanza
-        many: Colonie di vacanza
-        other: Colonie di vacanza
+        one: Campo di vacanza
+        many: Campi di vacanza
+        other: Campi di vacanza
 
       event/role/leader:
-        one: ''
-        many: ''
-        other: ''
+        one: Capocampo
+        many: Capicampo
+        other: Capicampo
       event/role/assistant_leader:
-        one: ''
-        many: ''
-        other: ''
+        one: Monitore/rice
+        many: Monitori/rici
+        other: Monitori/rici
       event/role/cook:
-        one: ''
-        many: ''
-        other: ''
+        one: Cuoco/a
+        many: Cuochi
+        other: Cuochi
       event/role/participant:
-        one: ''
-        many: ''
-        other: ''
+        one: Partecipante
+        many: Partecipanti
+        other: Partecipanti
       event/role/leader_zivildienst:
-        one: ''
-        many: ''
-        other: ''
+        one: Capocampo Zivi
+        many: Capicampo Zivi
+        other: Capicampo Zivi
       event/role/assistant_leader_zivildienst:
-        one: ''
-        many: ''
-        other: ''
+        one: Monitore/rice
+        many: Monitori/rici
+        other: Monitori/rici
       event/role/cook_zivildienst:
-        one: ''
-        many: ''
-        other: ''
+        one: Cuoco/a
+        many: Cuochi
+        other: Cuochi
       event/role/participant_zivildienst:
-        one: ''
-        many: ''
-        other: ''
+        one: Teilnehmer*innen Zivi
+        many: Teilnehmer*innen Zivi
+        other: Teilnehmer*innen Zivi
 
     attributes:
       person:
