@@ -20,14 +20,14 @@ fr:
         other: Bureau
 
       group/dachverband_leitungspool:
-        one: Moniteur/Monitrice
-        many: Moniteur/Monitrice
-        other: Moniteur/Monitrice
+        one: bassin de moniteur·rice
+        many: bassin de moniteur·rice·s
+        other: bassin de moniteur·rice·s
 
       group/dachverband_teilnehmerpool:
-        one: Participants/ Participantes
-        many: Participants/ Participantes
-        other: Participants/ Participantes
+        one: bassin de participant·e
+        many: bassin de participant·e·s
+        other: bassin de participant·e·s
 
       group/dachverband_stiftungsrat:
         one: Conseil de Fondation
@@ -77,30 +77,30 @@ fr:
         description:
 
       group/dachverband_leitungspool/lagerleitung:
-        one: ""
+        one: chef·fe de camp
         description:
 
       group/dachverband_leitungspool/kursleitung:
-        one: ""
+        one: chef·fe de cours
         description:
 
       group/dachverband_leitungspool/mitleitung:
-        one: ""
+        one: "moniteur·rice "
         description:
 
       group/dachverband_leitungspool/koch:
-        one: ""
+        one: cuisinier / cuisinière
         description:
 
       group/dachverband_leitungspool/zivildienstleistender:
-        one: Civilistes
+        one: Civiliste
         many: Civilistes
         other: Civilistes
         description:
 
       group/dachverband_teilnehmerpool/teilnehmer:
-        one: ""
-        description: ""
+        one: participant·e
+        description: Participant·e·s au camp de vacances
 
       group/dachverband_stiftungsrat/praesident:
         one: Président/e
@@ -148,33 +148,33 @@ fr:
         other: Camps de vacances
 
       event/role/leader:
-        one: ''
-        many: ''
-        other: ''
+        one: Chef·fe de camp
+        many: Chef·fe·s de camp
+        other: Chef·fe·s de camp
       event/role/assistant_leader:
-        one: ''
-        many: ''
-        other: ''
+        one: moniteur·rice
+        many: moniteur·rice·s
+        other: moniteur·rice·s
       event/role/cook:
-        one: ''
-        many: ''
-        other: ''
+        one: Cuisinier / Cuisinière
+        many: Cuisiniers / Cuisinières
+        other: Cuisiniers / Cuisinières
       event/role/participant:
-        one: ''
-        many: ''
-        other: ''
+        one: participant·e
+        many: participant·e·s
+        other: participant·e·s
       event/role/leader_zivildienst:
-        one: ''
-        many: ''
-        other: ''
+        one: Chef·fe de camp Zivi
+        many: Chef·fe·s de camp Zivi
+        other: Chef·fe·s de camp Zivi
       event/role/assistant_leader_zivildienst:
-        one: ''
-        many: ''
-        other: ''
+        one: moniteur·rice Zivi
+        many: moniteur·rice·s Zivi
+        other: moniteur·rice·s Zivi
       event/role/cook_zivildienst:
-        one: ''
-        many: ''
-        other: ''
+        one: Cuisinier / Cuisinière Zivi
+        many: Cuisiniers / Cuisinières Zivi
+        other: Cuisiniers / Cuisinières Zivi
       event/role/participant_zivildienst:
         one: ''
         many: ''

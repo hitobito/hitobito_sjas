@@ -16,7 +16,7 @@ fr:
       print:
         heading_event/camp: Inscription au camp
         requirements_for_event_camp: Conditions pour la participation au camp
-        read_and_agreed_for_event_camp: ""
+        read_and_agreed_for_event_camp: "Je remplis les conditions requises pour le camp de vacances, j'ai lu la description du camp de vacances et je l'accepte."
 
   event/participations:
     full_entry_label: "La participation de <i>%{person}</i> au camp <i>%{event}</i>"
