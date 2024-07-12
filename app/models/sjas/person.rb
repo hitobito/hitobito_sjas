@@ -8,7 +8,7 @@
 module Sjas::Person
   extend ActiveSupport::Concern
 
-  LANGUAGE_SKILLS = %w(native good basic none).freeze
+  LANGUAGE_SKILLS = %w[native good basic none].freeze
 
   included do
     include I18nEnums
@@ -22,5 +22,4 @@ module Sjas::Person
     i18n_enum :language_skill_en, LANGUAGE_SKILLS
     i18n_enum :language_skill_es, LANGUAGE_SKILLS
   end
-
 end

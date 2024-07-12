@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
 module HitobitoSjas
-  VERSION = '2.2.0'
+  VERSION = "2.2.0"
 end

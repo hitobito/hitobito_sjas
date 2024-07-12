@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
 # Externe
 #     Institutionen/Stiftungen[]
 #     Privatpersonen[]
@@ -13,7 +12,7 @@
 #     Partner
 class Group::DachverbandExterne < ::Group
   children Group::DachverbandExterne,
-           Group::DachverbandStiftung
+    Group::DachverbandStiftung
 
   class Adressverwalter < ::Role::Adressverwalter
   end

@@ -5,13 +5,12 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
 module HitobitoSjas
   class Wagon < Rails::Engine
     include Wagons::Wagon
 
     # Set the required application version.
-    app_requirement '>= 0'
+    app_requirement ">= 0"
 
     # Add a load path for this specific wagon
     config.autoload_paths += %W[
@@ -36,7 +35,7 @@ module HitobitoSjas
         EventAbility.abilities[Event] # Camp has same abilities as event
 
       # Decorators
-      EventDecorator.icons['Event::Camp'] = :campground
+      EventDecorator.icons["Event::Camp"] = :campground
 
       # Controllers
       PeopleController.include Sjas::PeopleController
@@ -60,17 +59,17 @@ module HitobitoSjas
         label: :camps,
         icon_name: :campground,
         url: :list_camps_path,
-        active_for: %w(list_camps),
+        active_for: %w[list_camps],
         if: ->(_) { can?(:list_available, Event::Camp) }
       )
     end
 
-    initializer 'sjas.add_settings' do |_app|
-      Settings.add_source!(File.join(paths['config'].existent, 'settings.yml'))
+    initializer "sjas.add_settings" do |_app|
+      Settings.add_source!(File.join(paths["config"].existent, "settings.yml"))
       Settings.reload!
     end
 
-    initializer 'sjas.add_inflections' do |_app|
+    initializer "sjas.add_inflections" do |_app|
       ActiveSupport::Inflector.inflections do |inflect|
         # inflect.irregular 'census', 'censuses'
       end
@@ -79,9 +78,8 @@ module HitobitoSjas
     private
 
     def seed_fixtures
-      fixtures = root.join('db', 'seeds')
-      ENV['NO_ENV'] ? [fixtures] : [fixtures, File.join(fixtures, Rails.env)]
+      fixtures = root.join("db", "seeds")
+      ENV["NO_ENV"] ? [fixtures] : [fixtures, File.join(fixtures, Rails.env)]
     end
-
   end
 end

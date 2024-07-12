@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
 class Group::DachverbandStiftungsrat < ::Group
   class Praesident < ::Role
     self.permissions = [:group_full]

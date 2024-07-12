@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
 module Sjas::Group
   # Define additional used attributes
   # self.used_attributes += [:website, :bank_account, :description]
@@ -25,14 +24,14 @@ module Sjas::Group
   private
 
   def one_of_a_kind?
-    potentially_unique_types = %w(
+    potentially_unique_types = %w[
       Group::Dachverband
       Group::DachverbandGeschaeftsstelle
       Group::DachverbandLeitungspool
       Group::DachverbandTeilnehmerpool
       Group::DachverbandStiftungsrat
       Group::DachverbandStiftung
-    )
+    ]
 
     potentially_unique_types.include?(type) &&
       self.class.where(type: type).one?

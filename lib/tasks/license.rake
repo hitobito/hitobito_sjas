@@ -5,13 +5,12 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
 namespace :app do
   namespace :license do
     task :config do # rubocop:disable Rails/RakeEnvironment
-      @licenser = Licenser.new('hitobito_sjas',
-                               'Stiftung für junge Auslandschweizer',
-                               'https://github.com/hitobito/hitobito_sjas')
+      @licenser = Licenser.new("hitobito_sjas",
+        "Stiftung für junge Auslandschweizer",
+        "https://github.com/hitobito/hitobito_sjas")
     end
   end
 end

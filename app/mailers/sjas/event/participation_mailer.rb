@@ -6,8 +6,8 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 module Sjas::Event::ParticipationMailer
-  CONTENT_CAMP_CONFIRMATION = 'event_application_camp_confirmation'
-  CONTENT_WAITING_LIST = 'event_application_waiting_list'
+  CONTENT_CAMP_CONFIRMATION = "event_application_camp_confirmation"
+  CONTENT_WAITING_LIST = "event_application_waiting_list"
 
   def confirmation(participation)
     @participation = participation
@@ -16,10 +16,10 @@ module Sjas::Event::ParticipationMailer
     attachments[filename] = Export::Pdf::Participation.render(participation)
 
     content = if participation.event.is_a?(Event::Camp)
-                CONTENT_CAMP_CONFIRMATION
-              else
-                ::Event::ParticipationMailer::CONTENT_CONFIRMATION
-              end
+      CONTENT_CAMP_CONFIRMATION
+    else
+      ::Event::ParticipationMailer::CONTENT_CONFIRMATION
+    end
 
     compose(person, content)
   end

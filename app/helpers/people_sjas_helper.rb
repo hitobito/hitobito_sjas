@@ -6,7 +6,7 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 module PeopleSjasHelper
-  PERSON_I18N_KEY_PREFIX = 'activerecord.attributes.person'
+  PERSON_I18N_KEY_PREFIX = "activerecord.attributes.person"
 
   def possible_person_language_skills
     Sjas::Person::LANGUAGE_SKILLS.map do |key|

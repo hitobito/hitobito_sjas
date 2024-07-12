@@ -5,10 +5,9 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
-require 'wagons'
-require 'hitobito_youth'
-require 'hitobito_sjas/wagon'
+require "wagons"
+require "hitobito_youth"
+require "hitobito_sjas/wagon"
 
 module HitobitoSjas
 end

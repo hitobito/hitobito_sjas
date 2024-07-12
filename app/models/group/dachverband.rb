@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-
 # SJAS
 class Group::Dachverband < ::Group
   self.layer = true
@@ -20,12 +19,12 @@ class Group::Dachverband < ::Group
   ]
 
   children Group::DachverbandGeschaeftsstelle,
-           Group::DachverbandLeitungspool,
-           Group::DachverbandTeilnehmerpool,
-           Group::DachverbandStiftungsrat,
-           Group::DachverbandStiftung,
-           Group::DachverbandExterne,
-           Group::Kantonalkomitee
+    Group::DachverbandLeitungspool,
+    Group::DachverbandTeilnehmerpool,
+    Group::DachverbandStiftungsrat,
+    Group::DachverbandStiftung,
+    Group::DachverbandExterne,
+    Group::Kantonalkomitee
 
   class Admin < ::Role::Admin
     self.permissions += [:impersonation]
