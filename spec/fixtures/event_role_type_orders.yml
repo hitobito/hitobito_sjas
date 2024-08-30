@@ -1,0 +1,7 @@
+eventleiter:
+  name: 'Event::Role::Leader'
+  order_weight: 1
+
+eventteilnehmer:
+  name: 'Event::Role::Participant'
+  order_weight: 2
