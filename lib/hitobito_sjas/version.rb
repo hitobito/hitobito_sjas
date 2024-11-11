@@ -6,5 +6,5 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 module HitobitoSjas
-  VERSION = "2.3.5"
+  VERSION = "2.3.6"
 end
