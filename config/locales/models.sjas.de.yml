@@ -176,6 +176,9 @@ de:
         language_skill_en: Englisch
         language_skill_es: Spanisch
         other_native_language: Andere Muttersprache
+        bank_account: Bankverbindung
+        insurance_company: Versicherung
+        insurance_number: Versicherungsnummer
 
       event/camp:
         description: Alterskategorie
