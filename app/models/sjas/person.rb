@@ -16,6 +16,8 @@ module Sjas::Person
     Person::PUBLIC_ATTRS << :language_skill_de << :language_skill_fr << :language_skill_it <<
       :language_skill_en << :language_skill_es << :other_native_language
 
+    Person::SEARCHABLE_ATTRS << :bank_account << :insurance_company << :insurance_number
+
     i18n_enum :language_skill_de, LANGUAGE_SKILLS
     i18n_enum :language_skill_fr, LANGUAGE_SKILLS
     i18n_enum :language_skill_it, LANGUAGE_SKILLS
