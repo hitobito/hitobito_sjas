@@ -176,6 +176,9 @@ en:
         language_skill_en: English
         language_skill_es: Spanish
         other_native_language: Other first language
+        bank_account: ""
+        insurance_company: ""
+        insurance_number: ""
 
       event/camp:
         description: Age group
