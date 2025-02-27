@@ -194,9 +194,9 @@ it:
         language_skill_en: Inglese
         language_skill_es: Spagnolo
         other_native_language: Altra madrelingua
-        bank_account: ""
-        insurance_company: ""
-        insurance_number: ""
+        bank_account: Coordinate bancarie
+        insurance_company: Assicurazione
+        insurance_number: Numero di assicurazione
 
       event/camp:
         description: Categoria d'età
