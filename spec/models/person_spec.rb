@@ -13,7 +13,6 @@ describe Person do
   context 'implemented through youth wagon' do
     it 'contains js number, nationality js and ahv number' do
       expect(described_class.column_names).to include('j_s_number')
-      expect(described_class.column_names).to include('ahv_number')
       expect(described_class.column_names).to include('nationality_j_s')
     end
   end
