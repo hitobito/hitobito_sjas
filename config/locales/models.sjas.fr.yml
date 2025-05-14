@@ -1,152 +1,92 @@
-#  Copyright (c) 2012-2021, Stiftung für junge Auslandschweizer. This file is part of
-#  hitobito_sjas and licensed under the Affero General Public License version 3
-#  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_sjas.
-
-
 fr:
   activerecord:
     models:
-
-      ### GROUPS
-
       group/dachverband:
         one: SJAS
         name: Fondation pour les enfants suisses à l'étranger
-
       group/dachverband_geschaeftsstelle:
         one: Bureau
         many: Bureau
         other: Bureau
-
       group/dachverband_leitungspool:
         one: bassin de moniteur·rice
         many: bassin de moniteur·rice·s
         other: bassin de moniteur·rice·s
-
       group/dachverband_teilnehmerpool:
         one: bassin de participant·e
         many: bassin de participant·e·s
         other: bassin de participant·e·s
-
       group/dachverband_stiftungsrat:
         one: Conseil de Fondation
         many: Conseil de Fondation
         other: Conseil de Fondation
-
       group/dachverband_stiftung:
         one: Fondations
         many: Fondations
         other: Fondations
-
       group/dachverband_partner:
         one: Partenaire
         many: Partenaires
         other: Partenaires
-
       group/kantonalkomitee:
         one: Comités cantonaux
         many: Comités cantonaux
         other: Comités cantonaux
-
       group/dachverband_externe:
         one: Externe
         many: Externe
         other: Externe
-
-      ### ROLES
-
       group/dachverband/admin:
         one: Administrateur / Administratrice
-        description:
-
       group/dachverband_geschaeftsstelle/adressverwalter:
         one: Gérant d'adresses / Gérante d'adresses
-        description:
-
       group/dachverband_geschaeftsstelle/projektleitung:
         one: Responsable de projets
-        description:
-
       group/dachverband_geschaeftsstelle/sachbearbeitung:
         one: Responsable du dossier
-        description:
-
       group/dachverband_geschaeftsstelle/geschaeftsfuehrung:
         one: Directeur / Directrice
-        description:
-
       group/dachverband_leitungspool/lagerleitung:
         one: chef·fe de camp
-        description:
-
       group/dachverband_leitungspool/kursleitung:
         one: chef·fe de cours
-        description:
-
       group/dachverband_leitungspool/mitleitung:
-        one: "moniteur·rice "
-        description:
-
+        one: 'moniteur·rice '
       group/dachverband_leitungspool/koch:
         one: cuisinier / cuisinière
-        description:
-
       group/dachverband_leitungspool/zivildienstleistender:
         one: Civiliste
         many: Civilistes
         other: Civilistes
-        description:
-
       group/dachverband_teilnehmerpool/teilnehmer:
         one: participant·e
         description: Participant·e·s au camp de vacances
-
       group/dachverband_stiftungsrat/praesident:
         one: Président/e
-        description:
-
       group/dachverband_stiftungsrat/vizepraesident:
         one: Vice-Président/e
-        description:
-
       group/dachverband_stiftungsrat/kassier:
         one: Trésorier / Trésorière
-        description:
-
       group/dachverband_stiftungsrat/sekretaer:
         one: Secrétaire
-        description:
-
       group/dachverband_stiftungsrat/beisitzer:
         one: Assesseur / Assesseuse
-        description:
-
       group/dachverband_stiftung/kontakt:
         one: Contact
-
       group/dachverband_partner/partner:
         one: Partenaire
-
       group/kantonalkomitee/adressverwalter:
         one: Gérant d'adresses / Gérante d'adresses
-
       group/kantonalkomitee/kontakt:
         one: Contact
-
       group/dachverband_externe/adressverwalter:
         one: Gérant d'adresses / Gérante d'adresses
-
       group/dachverband_externe/kontakt:
         one: Contact
-
-      ### ROLES
-
       event/camp:
         one: Camps de vacances
         many: Camps de vacances
         other: Camps de vacances
-
       event/role/leader:
         one: Chef·fe de camp
         many: Chef·fe·s de camp
@@ -175,11 +115,6 @@ fr:
         one: Cuisinier / Cuisinière Zivi
         many: Cuisiniers / Cuisinières Zivi
         other: Cuisiniers / Cuisinières Zivi
-      event/role/participant_zivildienst:
-        one: ''
-        many: ''
-        other: ''
-
     attributes:
       person:
         place_of_origin: Lieu d'origine et canton
@@ -197,6 +132,5 @@ fr:
         bank_account: Coordonnées bancaires
         insurance_company: Assurance
         insurance_number: Numéro d'assurance
-
       event/camp:
         description: Catégorie d'âge
