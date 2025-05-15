@@ -1,1 +1,33 @@
-it: {}
+#  Copyright (c) 2012-2021, Stiftung für junge Auslandschweizer. This file is part of
+#  hitobito_sjas and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_sjas.
+
+it:
+  contactable:
+    phone_number_fields:
+      note: Inserire il prefisso internazionale.
+
+  event:
+    application_market:
+      popover_waiting_list:
+        waiting_list_info: Aggiungi questa persona alla lista d'attesa.
+    participations:
+      print:
+        heading_event/camp: Iscrizione alla colonia di vacanza
+        requirements_for_event_camp: Condizioni di partecipazione alla colonia di vacanza
+        read_and_agreed_for_event_camp: "Io soddisfo i requisiti per il campo di vacanza, ho letto la descrizione del campo di vacanza e sono d'accordo."
+
+  event/participations:
+    full_entry_label: "La partecipazione di <i>%{person}</i> al <i>%{event}</i>"
+    success: "%{full_entry_label} è stata registrata correttamente. A breve riceverà un’email con i dati di contatto inseriti."
+
+  events:
+    global:
+      link:
+        add_event/camp: Crea campo
+    new:
+      title_event/camp: Crea campo
+
+  navigation:
+    camps: Campo di vacanza
