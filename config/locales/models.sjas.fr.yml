@@ -176,9 +176,8 @@ fr:
         many: Cuisiniers / Cuisinières Zivi
         other: Cuisiniers / Cuisinières Zivi
       event/role/participant_zivildienst:
-        one: ''
-        many: ''
-        other: ''
+        one: Teilnehmer*in Zivi
+        other: Teilnehmer*innen Zivi
 
     attributes:
       person:
