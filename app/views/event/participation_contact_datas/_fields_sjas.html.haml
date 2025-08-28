@@ -4,7 +4,7 @@
 -#  https://github.com/hitobito/hitobito_sjas.
 
 = field_set_tag do
-  = f.labeled_input_field(:place_of_origin) if entry.show_attr?(:place_of_origin)
+  = f.labeled_input_field(:place_of_origin) if event.show_contact_attr?(:place_of_origin)
 
 = field_set_tag do
   - %w(de fr it en es).each do |l|
