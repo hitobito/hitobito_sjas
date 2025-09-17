@@ -45,6 +45,7 @@ module Sjas::Event::ParticipationMailer
   end
 
   def placeholder_participant_birthday
+    return "" unless person.birthday
     localize(person.birthday)
   end
 
