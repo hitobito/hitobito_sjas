@@ -9,7 +9,7 @@ require "spec_helper"
 
 describe Event::ParticipationMailer do
   let(:person) { people(:leader) }
-  let(:participation) { Fabricate(:event_participation, event: event, person: person) }
+  let(:participation) { Fabricate(:event_participation, event: event, participant: person) }
 
   context "in camp" do
     let(:event) { events(:top_camp) }
