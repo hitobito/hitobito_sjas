@@ -13,14 +13,14 @@ module Sjas::Event::ListsController
   def camps
     authorize!(:list_available, Event::Camp)
 
-    @grouped_events = grouped(upcoming_user_events_of_type(Event::Camp))
+    @grouped_events = grouped(upcoming_user_events_of_type(Event::Camp.sti_name))
     render :events
   end
 
   def events
     authorize!(:list_available, Event)
 
-    @grouped_events = grouped(upcoming_user_events_of_type(Event, allow_null: true))
+    @grouped_events = grouped(upcoming_user_events_of_type(Event.sti_name, allow_null: true))
   end
 
   private
