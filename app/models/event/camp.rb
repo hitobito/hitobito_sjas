@@ -6,7 +6,7 @@
 #  https://github.com/hitobito/hitobito_sjas.
 
 class Event::Camp < Event
-  self.used_attributes += [:waiting_list]
+  self.used_attributes += [:waiting_list, :automatic_assignment]
   self.used_attributes -= [:motto, :guest_limit]
 
   self.supports_applications = true
