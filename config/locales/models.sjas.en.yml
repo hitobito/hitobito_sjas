@@ -159,7 +159,7 @@ en:
         one: Civil servant cook
         other: Civil servant cooks
       event/role/participant_zivildienst:
-        one: Teilnehmer*innen Zivi
+        one: Teilnehmer*in Zivi
         other: Teilnehmer*innen Zivi
 
     attributes:

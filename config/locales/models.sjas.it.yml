@@ -12,7 +12,7 @@ it:
 
       group/dachverband:
         one: SJAS
-        name: Fondazione per i giovani svizzeri all'estero
+        name: Fondazione per la gioventù svizzera all'estero
 
       group/dachverband_geschaeftsstelle:
         one: Segreteria
@@ -176,8 +176,7 @@ it:
         many: Cuochi
         other: Cuochi
       event/role/participant_zivildienst:
-        one: Teilnehmer*innen Zivi
-        many: Teilnehmer*innen Zivi
+        one: Teilnehmer*in Zivi
         other: Teilnehmer*innen Zivi
 
     attributes:
