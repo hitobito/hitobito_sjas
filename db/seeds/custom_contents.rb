@@ -5,7 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
 
-CustomContent.seed_once(:key,
+CustomContent.seed(:key,
   {
     key: Event::ParticipationMailer::CONTENT_CAMP_CONFIRMATION,
     placeholders_required: 'camp-name',
