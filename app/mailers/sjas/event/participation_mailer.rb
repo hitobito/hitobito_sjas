@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2021, Stiftung für junge Auslandschweizer. This file is part of
+#  Copyright (c) 2021-2026, Stiftung für junge Auslandschweizer. This file is part of
 #  hitobito_sjas and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_sjas.
@@ -11,6 +11,7 @@ module Sjas::Event::ParticipationMailer
 
   def confirmation(participation)
     @participation = participation
+    @include_answers = true
 
     filename = Export::Pdf::Participation.filename(participation)
     attachments[filename] = Export::Pdf::Participation.render(participation)
